@@ -1,5 +1,5 @@
 //
-//  GameCenterController.h
+//  SPGameVC.h
 //  Puzzle
 //
 //  Created by duodian on 2018/5/31.
@@ -10,7 +10,7 @@
 //#import "LevelModel.h"
 typedef void(^CompleteGameBlock)(void);
 
-@interface GameCenterController : UIViewController
+@interface SPGameVC : UIViewController
 @property (nonatomic,strong) UIImage *iconImage;
 @property (nonatomic,strong) UIImage *originImage;
 

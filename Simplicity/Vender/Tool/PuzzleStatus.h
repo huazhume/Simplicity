@@ -20,7 +20,7 @@
 /// 方块数组，按从上到下，从左到右，顺序排列
 @property (nonatomic, strong) NSMutableArray<PuzzlePiece *> *pieceArray;
 
-/// 空格位置，无空格时为-1
+/// 空格位置，无空格时为-1BaseNavController
 @property (nonatomic, assign) NSInteger emptyIndex;
 
 /// 创建实例，matrixOrder至少为3，image非空

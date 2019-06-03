@@ -6,22 +6,18 @@
 //  Copyright © 2018年 丁远帅. All rights reserved.
 //
 
-#import "GameCenterController.h"
-//#import "LevelGroupModel.h"
-//#import "LevelModel.h"
+#import "SPGameVC.h"
 #import "PuzzleStatus.h"
 #import "JXBreadthFirstSearcher.h"
 #import "JXDoubleBreadthFirstSearcher.h"
 #import "JXAStarSearcher.h"
 #import "TYFWaveButton.h"
-#import "YQInAppPurchaseTool.h"
 #import <SVProgressHUD/SVProgressHUD.h>
-//#import "DDPuzzle-Swift.h"
 #import "WinBgView.h"
 #import <AVFoundation/AVFoundation.h>
 #import "WHStoryMakerHeader.h"
 
-@interface GameCenterController()<YQInAppPurchaseToolDelegate,AVAudioPlayerDelegate>
+@interface SPGameVC()<AVAudioPlayerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 /// 图片
 @property (nonatomic, strong) UIImage *image;
@@ -37,6 +33,7 @@
 @property (nonatomic, strong) PuzzleStatus *completedStatus;
 /// 保存的游戏状态
 @property (nonatomic, strong) PuzzleStatus *savedStatus;
+@property (weak, nonatomic) IBOutlet TYFWaveButton *quitButton;
 
 /// 标记正在自动拼图
 @property (nonatomic, assign) BOOL isAutoGaming;
@@ -64,20 +61,20 @@
 @property (nonatomic,assign) dispatch_semaphore_t sema;
 @end
 
-@implementation GameCenterController
+@implementation SPGameVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.iconImage = [UIImage imageNamed:@"source"];
-    self.originImage = [UIImage imageNamed:@"source"];
+    self.previewImage.layer.masksToBounds = YES;
+//    self.iconImage = [UIImage imageNamed:@"source"];
+//    self.originImage = [UIImage imageNamed:@"source"];
     _downloadBtn.hidden = YES;
     self.matrixOrder = 3;
     self.algorithm = 3;
     _previewImage.image = _iconImage;
     NSString *path_document = NSHomeDirectory();
     //设置一个图片的存储路径
-    NSString *imagePath = [path_document stringByAppendingString:@"/Documents/pic.png"];
-    self.image = [UIImage imageNamed:@"source"];
+    self.image = self.iconImage;
     [self randomPiece];
     
     _resetBtn.layer.cornerRadius = 20;
@@ -85,6 +82,9 @@
     
     _autoBtn.layer.cornerRadius = 20;
     _autoBtn.clipsToBounds = YES;
+    
+    _quitButton.layer.cornerRadius = 20;
+    _quitButton.layer.masksToBounds = YES;
     
     [self initPlayer];
     
@@ -96,6 +96,10 @@
         _scrollView.contentSize = CGSizeMake(0, _viewHeightConstraint.constant);
     }
     _scrollView.bounces = NO;
+}
+
+- (IBAction)closeClicked:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)downloadClicked:(UIButton *)sender {
@@ -139,7 +143,7 @@
     NSInteger second = timeCount%60;
     NSString *timeStr = [NSString stringWithFormat:@"%02ld:%02ld",minute,second];
     dispatch_async(dispatch_get_main_queue(), ^{
-        _timeLabel.text = timeStr;
+        self.timeLabel.text = timeStr;
     });
 }
 
@@ -348,11 +352,11 @@
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        _autoBtn.enabled = NO;
-        [_autoBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
+        self.autoBtn.enabled = NO;
+        [self.autoBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
         
-        _resetBtn.enabled = NO;
-        [_resetBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
+        self.resetBtn.enabled = NO;
+        [self.resetBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
         
         [self autoMove];
     });
@@ -361,20 +365,15 @@
     _autoBtn.enabled = YES;
     NSLog(@"购买成功");
     
-    YQInAppPurchaseTool *Tool = [YQInAppPurchaseTool defaultTool];
-//    IAPTool.delegate = self;
-//    IAPTool.CheckAfterPay = NO;
-//    [SVProgressHUD showWithStatus:@"处理中..."];
-//    [IAPTool requestProductsWithProductArray:@[@"com.dys.puzzle01"]];
 }
 
 - (void)setIsAutoGaming:(BOOL)isAutoGaming {
     _isAutoGaming = isAutoGaming;
     dispatch_async(dispatch_get_main_queue(), ^{
         if (isAutoGaming) {
-            _resetBtn.enabled = NO;
+            self.resetBtn.enabled = NO;
         } else {
-            _resetBtn.enabled = YES;
+            self.resetBtn.enabled = YES;
         }
     });
 }
@@ -388,18 +387,18 @@
     [_winPlayer play];
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        _autoBtn.enabled = NO;
-        [_autoBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
+        self.autoBtn.enabled = NO;
+        [self.autoBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
         
-        _resetBtn.enabled = YES;
-        [_resetBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        self.resetBtn.enabled = YES;
+        [self.resetBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 
         [self.currentStatus.pieceArray enumerateObjectsUsingBlock:^(PuzzlePiece * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             obj.enabled = NO;
         }];
         
-        _downloadBtn.hidden = NO;
-        StoryMakeImageEditorViewController *storyMakerVc = [[StoryMakeImageEditorViewController alloc] initWithImage:_originImage];
+        self.downloadBtn.hidden = NO;
+        StoryMakeImageEditorViewController *storyMakerVc = [[StoryMakeImageEditorViewController alloc] initWithImage:self.originImage];
         [self presentViewController:storyMakerVc animated:YES completion:nil];
     });
     
@@ -422,18 +421,6 @@
     } else {
         [SVProgressHUD showInfoWithStatus:@"保存失败"];
     }
-}
-
-- (IBAction)closeClicked:(id)sender {
-//    LMLDropdownAlertView *alertView = [[LMLDropdownAlertView alloc] initWithFrame:self.view.bounds];
-//    [alertView showAlertWithTitle:@"提示" detail_Title:@"确定要退出游戏?" cancleButtonTitle:@"取消" confirmButtonTitle:@"确定" action:^(UIButton * _Nonnull btn) {
-//        NSString *path = [[NSBundle mainBundle] pathForResource:@"bye" ofType:@"mp3"];
-//        NSURL *url = [NSURL fileURLWithPath:path];
-//        _byePlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-//        _byePlayer.delegate = self;
-//        [_byePlayer prepareToPlay];
-//        [_byePlayer play];
-//    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -461,36 +448,6 @@
 }
 
 #pragma mark --------YQInAppPurchaseToolDelegate
-//IAP工具已获得可购买的商品
--(void)IAPToolGotProducts:(NSMutableArray *)products {
-//    [self BuyProduct:@"com.dys.puzzle01"];
-}
-
-//支付失败/取消
--(void)IAPToolCanceldWithProductID:(NSString *)productID {
-    [SVProgressHUD dismiss];
-    _autoBtn.enabled = YES;
-    self.mytimeCount += 1;
-    [self beginGame];
-    NSLog(@"Cancel");
-}
-
-//支付成功了，并开始向苹果服务器进行验证（若CheckAfterPay为NO，则不会经过此步骤）
--(void)IAPToolBeginCheckingdWithProductID:(NSString *)productID {
-    NSLog(@"BeginChecking:%@",productID);
-}
-
-//商品被重复验证了
--(void)IAPToolCheckRedundantWithProductID:(NSString *)productID {
-    [SVProgressHUD showInfoWithStatus:@"重复验证了"];
-}
-
-//商品完全购买成功且验证成功了。（若CheckAfterPay为NO，则会在购买成功后直接触发此方法）
--(void)IAPToolBoughtProductSuccessedWithProductID:(NSString *)productID
-                                          andInfo:(NSDictionary *)infoDic {
-   
-}
-
 - (void)autoMove {
     JXPathSearcher *searcher = nil;
     switch (self.algorithm) {
@@ -509,7 +466,6 @@
         default:
             break;
     }
-    
     searcher.startStatus = [self.currentStatus copyStatus];
     searcher.targetStatus = [self.completedStatus copyStatus];
     [searcher setEqualComparator:^BOOL(PuzzleStatus *status1, PuzzleStatus *status2) {
@@ -544,7 +500,7 @@
         }];
         
         // 拼图完成
-        [_timer invalidate];
+        [self.timer invalidate];
         [self gameEnd];
         self.currentStatus = [path lastObject];
         self.isAutoGaming = NO;
@@ -553,25 +509,6 @@
 
 - (void)updateSema {
     dispatch_semaphore_signal(_sema);
-}
-
-//商品购买成功了，但向苹果服务器验证失败了
-//2种可能：
-//1，设备越狱了，使用了插件，在虚假购买。
-//2，验证的时候网络突然中断了。（一般极少出现，因为购买的时候是需要网络的）
--(void)IAPToolCheckFailedWithProductID:(NSString *)productID
-                               andInfo:(NSData *)infoData {
-    [SVProgressHUD showErrorWithStatus:@"Error"];
-}
-
-//内购系统错误了
--(void)IAPToolSysWrong {
-    [SVProgressHUD showErrorWithStatus:@"Error"];
-}
-
-//购买商品
--(void)BuyProduct:(NSString *)productId {
-    [[YQInAppPurchaseTool defaultTool] buyProduct:productId];
 }
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {

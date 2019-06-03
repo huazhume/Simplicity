@@ -21,13 +21,12 @@
 //    _scoreLabel.alpha = 0;
     _logoView.transform = CGAffineTransformMakeScale(4,4);
     [UIView animateWithDuration:0.2 animations:^{
-        _logoView.transform = CGAffineTransformMakeScale(0.5,0.5);
+        self.logoView.transform = CGAffineTransformMakeScale(0.5,0.5);
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.2 animations:^{
-            _logoView.transform = CGAffineTransformIdentity;
+            self.logoView.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:1 animations:^{
-//                _scoreLabel.alpha = 1;
             } completion:^(BOOL finished) {
                 
             }];
