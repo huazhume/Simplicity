@@ -23,9 +23,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"设置";
-    _titleArray = @[@"    动画音效",@"    其他"];
-    _dataArray = @[@[@"欢迎问候语",@"动画效果"],@[@"清除缓存",@"分享"]];
+    
+    self.title = @"Setup";
+    _titleArray = @[@"    Base setup",@"    Other"];
+    _dataArray = @[@[@"Voice",@"Contact us"],@[@"Clear cache",@"Share"]];
     self.view.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.tableView];
     
@@ -34,6 +35,26 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    
+    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.opaque = YES;
+    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName : [UIFont boldSystemFontOfSize:17]}];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+     self.navigationController.navigationBarHidden = NO;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    self.navigationController.navigationBarHidden = YES;
 }
 
 #pragma mark - Table view data source
@@ -100,7 +121,7 @@
                 [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
             }
         }
-        [SVProgressHUD showSuccessWithStatus:@"清除完成"];
+        [SVProgressHUD showSuccessWithStatus:@"clear complete"];
         _cacheLabel.text = @"0B";
     } else if (indexPath.row == 1) {
         NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/cn/app/yi-xiao-tong-meng-yu-ban/id1397291723?mt=8"];
@@ -112,7 +133,7 @@
         [self presentViewController:activityViewController animated:YES completion:nil];
         [activityViewController setCompletionWithItemsHandler:^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
             if (completed) {
-                [SVProgressHUD showSuccessWithStatus:@"分享成功"];
+                [SVProgressHUD showSuccessWithStatus:@"shared success"];
             }
         }];
     } else {

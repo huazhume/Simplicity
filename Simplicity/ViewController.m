@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SPGameVC.h"
 #import "SetController.h"
+#import "SPRecommendController.h"
 
 @interface ViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate>
 
@@ -48,7 +49,8 @@
     } else if (buttonIndex == 1) {
         [self takePhoto];
     } else if (buttonIndex == 2) {
-        
+        SPRecommendController *vc = [SPRecommendController new];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		18B09B6362DE1EDF94696466 /* libPods-Simplicity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C663D769C430E4FABFEF4FE /* libPods-Simplicity.a */; };
+		FB32320E22A694CB00009A5C /* MYWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32320D22A694CB00009A5C /* MYWaterFlowLayout.m */; };
+		FB32321222A694F400009A5C /* SPRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32321022A694F400009A5C /* SPRecommendController.m */; };
+		FB32321322A694F400009A5C /* SPRecommendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB32321122A694F400009A5C /* SPRecommendController.xib */; };
+		FB32321722A695C500009A5C /* SPRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32321522A695C500009A5C /* SPRecommendCell.m */; };
+		FB32321822A695C500009A5C /* SPRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB32321622A695C500009A5C /* SPRecommendCell.xib */; };
 		FB5172B7229E99B000252968 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5172B6229E99B000252968 /* AppDelegate.m */; };
 		FB5172BA229E99B000252968 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5172B9229E99B000252968 /* ViewController.m */; };
 		FB5172BD229E99B000252968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5172BB229E99B000252968 /* Main.storyboard */; };
@@ -17,7 +22,6 @@
 		FB5172C8229E99B200252968 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5172C7229E99B200252968 /* main.m */; };
 		FB5172D2229E99B300252968 /* SimplicityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5172D1229E99B300252968 /* SimplicityTests.m */; };
 		FB5172DD229E99B300252968 /* SimplicityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5172DC229E99B300252968 /* SimplicityUITests.m */; };
-		FB551E5322A3DE6A00053B5C /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551DDF22A3DE6900053B5C /* BaseNavController.m */; };
 		FB551E5422A3DE6A00053B5C /* bye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB551DE222A3DE6900053B5C /* bye.mp3 */; };
 		FB551E5522A3DE6A00053B5C /* welcome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB551DE322A3DE6900053B5C /* welcome.mp3 */; };
 		FB551E5622A3DE6A00053B5C /* gamecenter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB551DE422A3DE6900053B5C /* gamecenter.mp3 */; };
@@ -37,7 +41,6 @@
 		FB551E6422A3DE6A00053B5C /* sound_0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB551DF322A3DE6900053B5C /* sound_0.mp3 */; };
 		FB551E6522A3DE6A00053B5C /* LevelAudioPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB551DF422A3DE6900053B5C /* LevelAudioPlist.plist */; };
 		FB551E6622A3DE6A00053B5C /* sticker.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB551DF522A3DE6900053B5C /* sticker.plist */; };
-		FB551E6722A3DE6A00053B5C /* YQInAppPurchaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551DF722A3DE6900053B5C /* YQInAppPurchaseTool.m */; };
 		FB551E6822A3DE6A00053B5C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551DFF22A3DE6900053B5C /* UIImage+Extension.m */; };
 		FB551E6922A3DE6A00053B5C /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0022A3DE6900053B5C /* NSObject+Model.m */; };
 		FB551E6A22A3DE6A00053B5C /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0122A3DE6900053B5C /* NSDate+Extension.m */; };
@@ -73,11 +76,15 @@
 		FB551E8822A3DE6A00053B5C /* JXAStarSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4922A3DE6900053B5C /* JXAStarSearcher.m */; };
 		FB551E8922A3DE6A00053B5C /* JXBreadthFirstSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4B22A3DE6900053B5C /* JXBreadthFirstSearcher.m */; };
 		FB551E8A22A3DE6A00053B5C /* AFNet.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4E22A3DE6900053B5C /* AFNet.m */; };
-		FB551E8D22A3E0C000053B5C /* LMLDropdownAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB551E8C22A3E0C000053B5C /* LMLDropdownAlertView.swift */; };
-		FB551E9122A3E5B600053B5C /* GameCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9022A3E5B600053B5C /* GameCenterController.m */; };
+		FB551E9122A3E5B600053B5C /* SPGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9022A3E5B600053B5C /* SPGameVC.m */; };
 		FB551E9422A3E61F00053B5C /* TYFWaveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9222A3E61F00053B5C /* TYFWaveButton.m */; };
 		FB551E9822A3E64200053B5C /* WinBgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB551E9522A3E64200053B5C /* WinBgView.xib */; };
 		FB551E9922A3E64200053B5C /* WinBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9722A3E64200053B5C /* WinBgView.m */; };
+		FBAC193322A52290007C7883 /* SPChoosePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC193122A52290007C7883 /* SPChoosePhotoVC.m */; };
+		FBAC193422A52290007C7883 /* SPChoosePhotoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAC193222A52290007C7883 /* SPChoosePhotoVC.xib */; };
+		FBAC193822A53F7C007C7883 /* FLPaintingItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC193522A53F7B007C7883 /* FLPaintingItemCell.m */; };
+		FBAC193922A53F7C007C7883 /* FLPaintingItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAC193622A53F7C007C7883 /* FLPaintingItemCell.xib */; };
+		FBAF630322A3F81D00BFD8A0 /* SetController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAF630222A3F81D00BFD8A0 /* SetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +108,14 @@
 		5AE2D3048E2166E9212962D3 /* Pods-Simplicity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplicity.debug.xcconfig"; path = "Target Support Files/Pods-Simplicity/Pods-Simplicity.debug.xcconfig"; sourceTree = "<group>"; };
 		7C663D769C430E4FABFEF4FE /* libPods-Simplicity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simplicity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97191A99607BE977B07F008 /* Pods-Simplicity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplicity.release.xcconfig"; path = "Target Support Files/Pods-Simplicity/Pods-Simplicity.release.xcconfig"; sourceTree = "<group>"; };
+		FB32320C22A694CB00009A5C /* MYWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWaterFlowLayout.h; sourceTree = "<group>"; };
+		FB32320D22A694CB00009A5C /* MYWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWaterFlowLayout.m; sourceTree = "<group>"; };
+		FB32320F22A694F400009A5C /* SPRecommendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRecommendController.h; sourceTree = "<group>"; };
+		FB32321022A694F400009A5C /* SPRecommendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRecommendController.m; sourceTree = "<group>"; };
+		FB32321122A694F400009A5C /* SPRecommendController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPRecommendController.xib; sourceTree = "<group>"; };
+		FB32321422A695C500009A5C /* SPRecommendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRecommendCell.h; sourceTree = "<group>"; };
+		FB32321522A695C500009A5C /* SPRecommendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRecommendCell.m; sourceTree = "<group>"; };
+		FB32321622A695C500009A5C /* SPRecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPRecommendCell.xib; sourceTree = "<group>"; };
 		FB5172B2229E99B000252968 /* Simplicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simplicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5172B5229E99B000252968 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB5172B6229E99B000252968 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,8 +133,6 @@
 		FB5172D8229E99B300252968 /* SimplicityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplicityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5172DC229E99B300252968 /* SimplicityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplicityUITests.m; sourceTree = "<group>"; };
 		FB5172DE229E99B300252968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB551DDE22A3DE6900053B5C /* BaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavController.h; sourceTree = "<group>"; };
-		FB551DDF22A3DE6900053B5C /* BaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavController.m; sourceTree = "<group>"; };
 		FB551DE222A3DE6900053B5C /* bye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bye.mp3; sourceTree = "<group>"; };
 		FB551DE322A3DE6900053B5C /* welcome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = welcome.mp3; sourceTree = "<group>"; };
 		FB551DE422A3DE6900053B5C /* gamecenter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gamecenter.mp3; sourceTree = "<group>"; };
@@ -139,8 +152,6 @@
 		FB551DF322A3DE6900053B5C /* sound_0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_0.mp3; sourceTree = "<group>"; };
 		FB551DF422A3DE6900053B5C /* LevelAudioPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LevelAudioPlist.plist; sourceTree = "<group>"; };
 		FB551DF522A3DE6900053B5C /* sticker.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sticker.plist; sourceTree = "<group>"; };
-		FB551DF722A3DE6900053B5C /* YQInAppPurchaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQInAppPurchaseTool.m; sourceTree = "<group>"; };
-		FB551DF822A3DE6900053B5C /* YQInAppPurchaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQInAppPurchaseTool.h; sourceTree = "<group>"; };
 		FB551DFA22A3DE6900053B5C /* NSObject+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
 		FB551DFB22A3DE6900053B5C /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		FB551DFC22A3DE6900053B5C /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
@@ -216,14 +227,21 @@
 		FB551E5122A3DE6A00053B5C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FB551E5222A3DE6A00053B5C /* AFNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNet.h; sourceTree = "<group>"; };
 		FB551E8B22A3E04B00053B5C /* Simplicity-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simplicity-Swift.h"; sourceTree = "<group>"; };
-		FB551E8C22A3E0C000053B5C /* LMLDropdownAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMLDropdownAlertView.swift; sourceTree = "<group>"; };
-		FB551E8F22A3E5B600053B5C /* GameCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterController.h; sourceTree = "<group>"; };
-		FB551E9022A3E5B600053B5C /* GameCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterController.m; sourceTree = "<group>"; };
+		FB551E8F22A3E5B600053B5C /* SPGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGameVC.h; sourceTree = "<group>"; };
+		FB551E9022A3E5B600053B5C /* SPGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGameVC.m; sourceTree = "<group>"; };
 		FB551E9222A3E61F00053B5C /* TYFWaveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFWaveButton.m; sourceTree = "<group>"; };
 		FB551E9322A3E61F00053B5C /* TYFWaveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFWaveButton.h; sourceTree = "<group>"; };
 		FB551E9522A3E64200053B5C /* WinBgView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinBgView.xib; sourceTree = "<group>"; };
 		FB551E9622A3E64200053B5C /* WinBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinBgView.h; sourceTree = "<group>"; };
 		FB551E9722A3E64200053B5C /* WinBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinBgView.m; sourceTree = "<group>"; };
+		FBAC193022A52290007C7883 /* SPChoosePhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPChoosePhotoVC.h; sourceTree = "<group>"; };
+		FBAC193122A52290007C7883 /* SPChoosePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPChoosePhotoVC.m; sourceTree = "<group>"; };
+		FBAC193222A52290007C7883 /* SPChoosePhotoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPChoosePhotoVC.xib; sourceTree = "<group>"; };
+		FBAC193522A53F7B007C7883 /* FLPaintingItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPaintingItemCell.m; sourceTree = "<group>"; };
+		FBAC193622A53F7C007C7883 /* FLPaintingItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLPaintingItemCell.xib; sourceTree = "<group>"; };
+		FBAC193722A53F7C007C7883 /* FLPaintingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPaintingItemCell.h; sourceTree = "<group>"; };
+		FBAF630122A3F81D00BFD8A0 /* SetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetController.h; sourceTree = "<group>"; };
+		FBAF630222A3F81D00BFD8A0 /* SetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,27 +350,15 @@
 		FB551DDC22A3DE5900053B5C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				FB551E8C22A3E0C000053B5C /* LMLDropdownAlertView.swift */,
 				FB551E5222A3DE6A00053B5C /* AFNet.h */,
 				FB551E4E22A3DE6900053B5C /* AFNet.m */,
-				FB551DDD22A3DE6900053B5C /* Base */,
 				FB551DF922A3DE6900053B5C /* Category */,
 				FB551E4F22A3DE6A00053B5C /* Macro */,
 				FB551E5122A3DE6A00053B5C /* PrefixHeader.pch */,
 				FB551DE022A3DE6900053B5C /* Resource */,
 				FB551E0622A3DE6900053B5C /* Tool */,
-				FB551DF622A3DE6900053B5C /* YQInAppPurchaseTool */,
 			);
 			path = Vender;
-			sourceTree = "<group>";
-		};
-		FB551DDD22A3DE6900053B5C /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				FB551DDE22A3DE6900053B5C /* BaseNavController.h */,
-				FB551DDF22A3DE6900053B5C /* BaseNavController.m */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		FB551DE022A3DE6900053B5C /* Resource */ = {
@@ -395,15 +401,6 @@
 				FB551DEE22A3DE6900053B5C /* 3.mp3 */,
 			);
 			path = level;
-			sourceTree = "<group>";
-		};
-		FB551DF622A3DE6900053B5C /* YQInAppPurchaseTool */ = {
-			isa = PBXGroup;
-			children = (
-				FB551DF722A3DE6900053B5C /* YQInAppPurchaseTool.m */,
-				FB551DF822A3DE6900053B5C /* YQInAppPurchaseTool.h */,
-			);
-			path = YQInAppPurchaseTool;
 			sourceTree = "<group>";
 		};
 		FB551DF922A3DE6900053B5C /* Category */ = {
@@ -605,13 +602,29 @@
 		FB551E8E22A3E5AA00053B5C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FB32320C22A694CB00009A5C /* MYWaterFlowLayout.h */,
+				FB32320D22A694CB00009A5C /* MYWaterFlowLayout.m */,
+				FBAC193722A53F7C007C7883 /* FLPaintingItemCell.h */,
+				FBAC193522A53F7B007C7883 /* FLPaintingItemCell.m */,
+				FBAC193622A53F7C007C7883 /* FLPaintingItemCell.xib */,
+				FBAF630122A3F81D00BFD8A0 /* SetController.h */,
+				FBAF630222A3F81D00BFD8A0 /* SetController.m */,
 				FB551E9622A3E64200053B5C /* WinBgView.h */,
 				FB551E9722A3E64200053B5C /* WinBgView.m */,
 				FB551E9522A3E64200053B5C /* WinBgView.xib */,
 				FB551E9322A3E61F00053B5C /* TYFWaveButton.h */,
 				FB551E9222A3E61F00053B5C /* TYFWaveButton.m */,
-				FB551E8F22A3E5B600053B5C /* GameCenterController.h */,
-				FB551E9022A3E5B600053B5C /* GameCenterController.m */,
+				FB551E8F22A3E5B600053B5C /* SPGameVC.h */,
+				FB551E9022A3E5B600053B5C /* SPGameVC.m */,
+				FBAC193022A52290007C7883 /* SPChoosePhotoVC.h */,
+				FBAC193122A52290007C7883 /* SPChoosePhotoVC.m */,
+				FBAC193222A52290007C7883 /* SPChoosePhotoVC.xib */,
+				FB32320F22A694F400009A5C /* SPRecommendController.h */,
+				FB32321022A694F400009A5C /* SPRecommendController.m */,
+				FB32321122A694F400009A5C /* SPRecommendController.xib */,
+				FB32321422A695C500009A5C /* SPRecommendCell.h */,
+				FB32321522A695C500009A5C /* SPRecommendCell.m */,
+				FB32321622A695C500009A5C /* SPRecommendCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -728,8 +741,11 @@
 				FB5172C5229E99B200252968 /* LaunchScreen.storyboard in Resources */,
 				FB551E5622A3DE6A00053B5C /* gamecenter.mp3 in Resources */,
 				FB551E5822A3DE6A00053B5C /* soso.mp3 in Resources */,
+				FB32321322A694F400009A5C /* SPRecommendController.xib in Resources */,
 				FB551E6322A3DE6A00053B5C /* sound_1.mp3 in Resources */,
+				FB32321822A695C500009A5C /* SPRecommendCell.xib in Resources */,
 				FB551E5E22A3DE6A00053B5C /* 2.mp3 in Resources */,
+				FBAC193422A52290007C7883 /* SPChoosePhotoVC.xib in Resources */,
 				FB551E5922A3DE6A00053B5C /* circle.mp3 in Resources */,
 				FB551E6022A3DE6A00053B5C /* movepiece.mp3 in Resources */,
 				FB551E5722A3DE6A00053B5C /* win.mp3 in Resources */,
@@ -740,6 +756,7 @@
 				FB551E9822A3E64200053B5C /* WinBgView.xib in Resources */,
 				FB551E6522A3DE6A00053B5C /* LevelAudioPlist.plist in Resources */,
 				FB551E6622A3DE6A00053B5C /* sticker.plist in Resources */,
+				FBAC193922A53F7C007C7883 /* FLPaintingItemCell.xib in Resources */,
 				FB551E6222A3DE6A00053B5C /* sound_3.mp3 in Resources */,
 				FB5172C2229E99B200252968 /* Assets.xcassets in Resources */,
 				FB551E6422A3DE6A00053B5C /* sound_0.mp3 in Resources */,
@@ -826,29 +843,30 @@
 				FB551E7622A3DE6A00053B5C /* StoryMakeSelectColorFooterView.m in Sources */,
 				FB551E7722A3DE6A00053B5C /* StoryMakeStickerColorFootCollectionViewCell.m in Sources */,
 				FB551E7D22A3DE6A00053B5C /* StoryMakeStickerBaseView.m in Sources */,
-				FB551E8D22A3E0C000053B5C /* LMLDropdownAlertView.swift in Sources */,
 				FB551E6822A3DE6A00053B5C /* UIImage+Extension.m in Sources */,
 				FB551E9922A3E64200053B5C /* WinBgView.m in Sources */,
 				FB551E8522A3DE6A00053B5C /* PuzzleStatus.m in Sources */,
 				FB551E8722A3DE6A00053B5C /* JXPathSearcher.m in Sources */,
 				FB551E8222A3DE6A00053B5C /* ImageUtil.m in Sources */,
-				FB551E5322A3DE6A00053B5C /* BaseNavController.m in Sources */,
 				FB551E6E22A3DE6A00053B5C /* CommonTool.m in Sources */,
 				FB551E7522A3DE6A00053B5C /* StoryMakeImageEditorViewController.m in Sources */,
 				FB5172B7229E99B000252968 /* AppDelegate.m in Sources */,
 				FB551E8122A3DE6A00053B5C /* StoryMakeFooterFilterCell.m in Sources */,
+				FB32321222A694F400009A5C /* SPRecommendController.m in Sources */,
 				FB551E8422A3DE6A00053B5C /* LSDrawView.m in Sources */,
 				FB551E9422A3E61F00053B5C /* TYFWaveButton.m in Sources */,
 				FB551E7222A3DE6A00053B5C /* StoryMakerFontManager.m in Sources */,
-				FB551E6722A3DE6A00053B5C /* YQInAppPurchaseTool.m in Sources */,
 				FB551E8822A3DE6A00053B5C /* JXAStarSearcher.m in Sources */,
-				FB551E9122A3E5B600053B5C /* GameCenterController.m in Sources */,
+				FB551E9122A3E5B600053B5C /* SPGameVC.m in Sources */,
 				FB551E7B22A3DE6A00053B5C /* StoryMakeStickerView.m in Sources */,
 				FB551E7E22A3DE6A00053B5C /* StoryMakeStickerFootSingleViewController.m in Sources */,
+				FB32320E22A694CB00009A5C /* MYWaterFlowLayout.m in Sources */,
 				FB551E6C22A3DE6A00053B5C /* NSString+Extension.m in Sources */,
 				FB551E7C22A3DE6A00053B5C /* StoryMakeStickerFooterCell.m in Sources */,
 				FB551E8922A3DE6A00053B5C /* JXBreadthFirstSearcher.m in Sources */,
+				FB32321722A695C500009A5C /* SPRecommendCell.m in Sources */,
 				FB551E8A22A3DE6A00053B5C /* AFNet.m in Sources */,
+				FBAF630322A3F81D00BFD8A0 /* SetController.m in Sources */,
 				FB551E8022A3DE6A00053B5C /* StoryMakeFilterFooterView.m in Sources */,
 				FB551E6F22A3DE6A00053B5C /* JXPriorityQueue.m in Sources */,
 				FB551E6D22A3DE6A00053B5C /* UIView+Extension.m in Sources */,
@@ -856,6 +874,8 @@
 				FB5172C8229E99B200252968 /* main.m in Sources */,
 				FB5172C0229E99B000252968 /* Simplicity.xcdatamodeld in Sources */,
 				FB551E7F22A3DE6A00053B5C /* StoryMakeStickerImageView.m in Sources */,
+				FBAC193822A53F7C007C7883 /* FLPaintingItemCell.m in Sources */,
+				FBAC193322A52290007C7883 /* SPChoosePhotoVC.m in Sources */,
 				FB551E7A22A3DE6A00053B5C /* StoryMakeToolsView.m in Sources */,
 				FB551E8622A3DE6A00053B5C /* JXDoubleBreadthFirstSearcher.m in Sources */,
 				FB551E7822A3DE6A00053B5C /* StoryMakeStickerLabelView.m in Sources */,
@@ -1079,7 +1099,6 @@
 		FB5172E5229E99B300252968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimplicityTests/Info.plist;
@@ -1098,7 +1117,6 @@
 		FB5172E6229E99B300252968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimplicityTests/Info.plist;
@@ -1117,7 +1135,6 @@
 		FB5172E8229E99B300252968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimplicityUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1135,7 +1152,6 @@
 		FB5172E9229E99B300252968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimplicityUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
