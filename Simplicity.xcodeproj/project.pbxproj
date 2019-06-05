@@ -69,6 +69,10 @@
 		FBB1A66822A7641B0044799A /* SPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A66622A7641B0044799A /* SPWebViewController.xib */; };
 		FBB1A67122A76CBE0044799A /* SPWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A66F22A76CBE0044799A /* SPWinViewController.m */; };
 		FBB1A67222A76CBE0044799A /* SPWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67022A76CBE0044799A /* SPWinViewController.xib */; };
+		FBB1A67622A774710044799A /* SPLaunchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A67422A774710044799A /* SPLaunchVC.m */; };
+		FBB1A67722A774710044799A /* SPLaunchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67522A774710044799A /* SPLaunchVC.xib */; };
+		FBB1A67A22A793C50044799A /* PrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67822A793C50044799A /* PrivacyPolicy.html */; };
+		FBB1A67B22A793C50044799A /* UserAgreement.html in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67922A793C50044799A /* UserAgreement.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +194,11 @@
 		FBB1A66E22A76CBE0044799A /* SPWinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPWinViewController.h; sourceTree = "<group>"; };
 		FBB1A66F22A76CBE0044799A /* SPWinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPWinViewController.m; sourceTree = "<group>"; };
 		FBB1A67022A76CBE0044799A /* SPWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPWinViewController.xib; sourceTree = "<group>"; };
+		FBB1A67322A774710044799A /* SPLaunchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLaunchVC.h; sourceTree = "<group>"; };
+		FBB1A67422A774710044799A /* SPLaunchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLaunchVC.m; sourceTree = "<group>"; };
+		FBB1A67522A774710044799A /* SPLaunchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPLaunchVC.xib; sourceTree = "<group>"; };
+		FBB1A67822A793C50044799A /* PrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy.html; sourceTree = "<group>"; };
+		FBB1A67922A793C50044799A /* UserAgreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UserAgreement.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,6 +429,11 @@
 		FB551E8E22A3E5AA00053B5C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FBB1A67822A793C50044799A /* PrivacyPolicy.html */,
+				FBB1A67922A793C50044799A /* UserAgreement.html */,
+				FBB1A67322A774710044799A /* SPLaunchVC.h */,
+				FBB1A67422A774710044799A /* SPLaunchVC.m */,
+				FBB1A67522A774710044799A /* SPLaunchVC.xib */,
 				FB32320C22A694CB00009A5C /* MYWaterFlowLayout.h */,
 				FB32320D22A694CB00009A5C /* MYWaterFlowLayout.m */,
 				FBAC193722A53F7C007C7883 /* FLPaintingItemCell.h */,
@@ -565,6 +579,7 @@
 				FB5172C5229E99B200252968 /* LaunchScreen.storyboard in Resources */,
 				FB551E5622A3DE6A00053B5C /* gamecenter.mp3 in Resources */,
 				FB551E5822A3DE6A00053B5C /* soso.mp3 in Resources */,
+				FBB1A67722A774710044799A /* SPLaunchVC.xib in Resources */,
 				FB32321322A694F400009A5C /* SPRecommendController.xib in Resources */,
 				FB551E6322A3DE6A00053B5C /* sound_1.mp3 in Resources */,
 				FB32321822A695C500009A5C /* SPRecommendCell.xib in Resources */,
@@ -575,6 +590,7 @@
 				FB551E5722A3DE6A00053B5C /* win.mp3 in Resources */,
 				FB551E5522A3DE6A00053B5C /* welcome.mp3 in Resources */,
 				FB551E5D22A3DE6A00053B5C /* 1.mp3 in Resources */,
+				FBB1A67A22A793C50044799A /* PrivacyPolicy.html in Resources */,
 				FB551E6122A3DE6A00053B5C /* sound_2.mp3 in Resources */,
 				FB551E5422A3DE6A00053B5C /* bye.mp3 in Resources */,
 				FB551E9822A3E64200053B5C /* WinBgView.xib in Resources */,
@@ -587,6 +603,7 @@
 				FB5172BD229E99B000252968 /* Main.storyboard in Resources */,
 				FB551E5A22A3DE6A00053B5C /* 6.mp3 in Resources */,
 				FBB1A67222A76CBE0044799A /* SPWinViewController.xib in Resources */,
+				FBB1A67B22A793C50044799A /* UserAgreement.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +692,7 @@
 				FB551E8822A3DE6A00053B5C /* JXAStarSearcher.m in Sources */,
 				FB551E9122A3E5B600053B5C /* SPGameVC.m in Sources */,
 				FB32320E22A694CB00009A5C /* MYWaterFlowLayout.m in Sources */,
+				FBB1A67622A774710044799A /* SPLaunchVC.m in Sources */,
 				FB551E6C22A3DE6A00053B5C /* NSString+Extension.m in Sources */,
 				FBB1A67122A76CBE0044799A /* SPWinViewController.m in Sources */,
 				FB551E8922A3DE6A00053B5C /* JXBreadthFirstSearcher.m in Sources */,

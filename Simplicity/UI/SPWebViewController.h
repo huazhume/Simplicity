@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (copy, nonatomic) NSString *url;
 
+@property (assign, nonatomic) BOOL isDismiss;
+
+@property (copy, nonatomic) NSString *titles;
+
+@property (copy, nonatomic) NSString *urlPath;
+
 @end
 
 NS_ASSUME_NONNULL_END

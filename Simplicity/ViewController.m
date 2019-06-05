@@ -11,6 +11,7 @@
 #import "SetController.h"
 #import "SPRecommendController.h"
 #import <RSKImageCropViewController.h>
+#import "SPLaunchVC.h"
 
 @interface ViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate,RSKImageCropViewControllerDelegate>
 
@@ -20,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController pushViewController:[SPLaunchVC new] animated:NO];
     self.navigationController.navigationBarHidden = YES;
     // Do any additional setup after loading the view, typically from a nib.
 }
