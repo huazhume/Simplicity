@@ -15,7 +15,7 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "WinBgView.h"
 #import <AVFoundation/AVFoundation.h>
-#import "WHStoryMakerHeader.h"
+#import "SPWinViewController.h"
 
 @interface SPGameVC()<AVAudioPlayerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *bgView;
@@ -103,8 +103,10 @@
 }
 
 - (IBAction)downloadClicked:(UIButton *)sender {
-    StoryMakeImageEditorViewController *storyMakerVc = [[StoryMakeImageEditorViewController alloc] initWithImage:_originImage];
-    [self presentViewController:storyMakerVc animated:YES completion:nil];
+    //你赢了 ？
+    SPWinViewController *vc = [SPWinViewController new];
+    vc.cImage = self.originImage;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
@@ -398,8 +400,12 @@
         }];
         
         self.downloadBtn.hidden = NO;
-        StoryMakeImageEditorViewController *storyMakerVc = [[StoryMakeImageEditorViewController alloc] initWithImage:self.originImage];
-        [self presentViewController:storyMakerVc animated:YES completion:nil];
+        
+        //你赢了   self.originImage
+        SPWinViewController *vc = [SPWinViewController new];
+        vc.cImage = self.originImage;
+        [self.navigationController pushViewController:vc animated:YES];
+    
     });
     
     if (_autotimer) {
@@ -521,5 +527,6 @@
 - (void)dealloc {
     NSLog(@"=========");
 }
+
 @end
 

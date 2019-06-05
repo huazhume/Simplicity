@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - JCore (1.2.6)
+  - JPush (3.1.0):
+    - JCore (~> 1.2.0)
   - Masonry (1.1.0)
   - MJRefresh (3.1.16)
   - RSKImageCropper (2.2.1)
@@ -27,6 +30,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - JPush (= 3.1.0)
   - Masonry
   - MJRefresh
   - RSKImageCropper
@@ -37,6 +41,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - JCore
+    - JPush
     - Masonry
     - MJRefresh
     - RSKImageCropper
@@ -46,6 +52,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
+  JPush: 5921e25ad13e0386351079217b009f2039084eac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
@@ -53,6 +61,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 8767ce6afcd916647858042b4db8cb4d32c11593
+PODFILE CHECKSUM: a1579c135028774fc73bb01d85c8f0f84e9ff5c1
 
 COCOAPODS: 1.6.1

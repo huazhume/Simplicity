@@ -76,12 +76,6 @@
     imageCropVC.delegate = self;
     imageCropVC.avoidEmptySpaceAroundImage = YES;
     [picker pushViewController:imageCropVC animated:YES];
-    
-//    SPGameVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SPGameVC"];
-//    vc.iconImage = image;
-//    vc.originImage = image;
-//    [self.navigationController pushViewController:vc animated:YES];
-    
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
@@ -99,13 +93,11 @@
     [self.navigationController presentViewController:picker animated:YES completion:nil];
 }
 
-
 #pragma mark - RSKImageCropViewControllerDataSource
 - (void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle {
     
     [controller dismissViewControllerAnimated:NO completion:^{
             SPGameVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SPGameVC"];
-
             vc.iconImage = croppedImage;
             vc.originImage = croppedImage;
             [self.navigationController pushViewController:vc animated:YES];

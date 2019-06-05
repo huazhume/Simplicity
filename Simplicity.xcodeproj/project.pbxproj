@@ -50,26 +50,6 @@
 		FB551E6E22A3DE6A00053B5C /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0722A3DE6900053B5C /* CommonTool.m */; };
 		FB551E6F22A3DE6A00053B5C /* JXPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0B22A3DE6900053B5C /* JXPriorityQueue.m */; };
 		FB551E7022A3DE6A00053B5C /* PuzzlePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0D22A3DE6900053B5C /* PuzzlePiece.m */; };
-		FB551E7122A3DE6A00053B5C /* StoryMaker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB551E1222A3DE6900053B5C /* StoryMaker.xcassets */; };
-		FB551E7222A3DE6A00053B5C /* StoryMakerFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E1622A3DE6900053B5C /* StoryMakerFontManager.m */; };
-		FB551E7322A3DE6A00053B5C /* UIImage+imageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E1722A3DE6900053B5C /* UIImage+imageWithColor.m */; };
-		FB551E7422A3DE6A00053B5C /* CDPMonitorKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E1822A3DE6900053B5C /* CDPMonitorKeyboard.m */; };
-		FB551E7522A3DE6A00053B5C /* StoryMakeImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E1C22A3DE6900053B5C /* StoryMakeImageEditorViewController.m */; };
-		FB551E7622A3DE6A00053B5C /* StoryMakeSelectColorFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E2122A3DE6900053B5C /* StoryMakeSelectColorFooterView.m */; };
-		FB551E7722A3DE6A00053B5C /* StoryMakeStickerColorFootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E2322A3DE6900053B5C /* StoryMakeStickerColorFootCollectionViewCell.m */; };
-		FB551E7822A3DE6A00053B5C /* StoryMakeStickerLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E2422A3DE6900053B5C /* StoryMakeStickerLabelView.m */; };
-		FB551E7922A3DE6A00053B5C /* StoryMakeStickerColorFootSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E2622A3DE6900053B5C /* StoryMakeStickerColorFootSingleViewController.m */; };
-		FB551E7A22A3DE6A00053B5C /* StoryMakeToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E2822A3DE6900053B5C /* StoryMakeToolsView.m */; };
-		FB551E7B22A3DE6A00053B5C /* StoryMakeStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E2D22A3DE6900053B5C /* StoryMakeStickerView.m */; };
-		FB551E7C22A3DE6A00053B5C /* StoryMakeStickerFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E2F22A3DE6900053B5C /* StoryMakeStickerFooterCell.m */; };
-		FB551E7D22A3DE6A00053B5C /* StoryMakeStickerBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E3022A3DE6900053B5C /* StoryMakeStickerBaseView.m */; };
-		FB551E7E22A3DE6A00053B5C /* StoryMakeStickerFootSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E3222A3DE6900053B5C /* StoryMakeStickerFootSingleViewController.m */; };
-		FB551E7F22A3DE6A00053B5C /* StoryMakeStickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E3322A3DE6900053B5C /* StoryMakeStickerImageView.m */; };
-		FB551E8022A3DE6A00053B5C /* StoryMakeFilterFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E3622A3DE6900053B5C /* StoryMakeFilterFooterView.m */; };
-		FB551E8122A3DE6A00053B5C /* StoryMakeFooterFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E3722A3DE6900053B5C /* StoryMakeFooterFilterCell.m */; };
-		FB551E8222A3DE6A00053B5C /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E3A22A3DE6900053B5C /* ImageUtil.m */; };
-		FB551E8322A3DE6A00053B5C /* LJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4022A3DE6900053B5C /* LJBaseModel.m */; };
-		FB551E8422A3DE6A00053B5C /* LSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4322A3DE6900053B5C /* LSDrawView.m */; };
 		FB551E8522A3DE6A00053B5C /* PuzzleStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4422A3DE6900053B5C /* PuzzleStatus.m */; };
 		FB551E8622A3DE6A00053B5C /* JXDoubleBreadthFirstSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4622A3DE6900053B5C /* JXDoubleBreadthFirstSearcher.m */; };
 		FB551E8722A3DE6A00053B5C /* JXPathSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4822A3DE6900053B5C /* JXPathSearcher.m */; };
@@ -85,6 +65,10 @@
 		FBAC193822A53F7C007C7883 /* FLPaintingItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC193522A53F7B007C7883 /* FLPaintingItemCell.m */; };
 		FBAC193922A53F7C007C7883 /* FLPaintingItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAC193622A53F7C007C7883 /* FLPaintingItemCell.xib */; };
 		FBAF630322A3F81D00BFD8A0 /* SetController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAF630222A3F81D00BFD8A0 /* SetController.m */; };
+		FBB1A66722A7641B0044799A /* SPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A66522A7641B0044799A /* SPWebViewController.m */; };
+		FBB1A66822A7641B0044799A /* SPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A66622A7641B0044799A /* SPWebViewController.xib */; };
+		FBB1A67122A76CBE0044799A /* SPWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A66F22A76CBE0044799A /* SPWinViewController.m */; };
+		FBB1A67222A76CBE0044799A /* SPWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67022A76CBE0044799A /* SPWinViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,48 +155,6 @@
 		FB551E0C22A3DE6900053B5C /* JXPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPriorityQueue.h; sourceTree = "<group>"; };
 		FB551E0D22A3DE6900053B5C /* PuzzlePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzlePiece.m; sourceTree = "<group>"; };
 		FB551E0E22A3DE6900053B5C /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
-		FB551E1022A3DE6900053B5C /* WHStoryMakerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHStoryMakerHeader.h; sourceTree = "<group>"; };
-		FB551E1222A3DE6900053B5C /* StoryMaker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StoryMaker.xcassets; sourceTree = "<group>"; };
-		FB551E1422A3DE6900053B5C /* CDPMonitorKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPMonitorKeyboard.h; sourceTree = "<group>"; };
-		FB551E1522A3DE6900053B5C /* UIImage+imageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageWithColor.h"; sourceTree = "<group>"; };
-		FB551E1622A3DE6900053B5C /* StoryMakerFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakerFontManager.m; sourceTree = "<group>"; };
-		FB551E1722A3DE6900053B5C /* UIImage+imageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+imageWithColor.m"; sourceTree = "<group>"; };
-		FB551E1822A3DE6900053B5C /* CDPMonitorKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPMonitorKeyboard.m; sourceTree = "<group>"; };
-		FB551E1922A3DE6900053B5C /* StoryMakerFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakerFontManager.h; sourceTree = "<group>"; };
-		FB551E1B22A3DE6900053B5C /* StoryMakeImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeImageEditorViewController.h; sourceTree = "<group>"; };
-		FB551E1C22A3DE6900053B5C /* StoryMakeImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeImageEditorViewController.m; sourceTree = "<group>"; };
-		FB551E1F22A3DE6900053B5C /* StoryMakeStickerColorFootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerColorFootCollectionViewCell.h; sourceTree = "<group>"; };
-		FB551E2022A3DE6900053B5C /* StoryMakeStickerLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerLabelView.h; sourceTree = "<group>"; };
-		FB551E2122A3DE6900053B5C /* StoryMakeSelectColorFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeSelectColorFooterView.m; sourceTree = "<group>"; };
-		FB551E2222A3DE6900053B5C /* StoryMakeStickerColorFootSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerColorFootSingleViewController.h; sourceTree = "<group>"; };
-		FB551E2322A3DE6900053B5C /* StoryMakeStickerColorFootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerColorFootCollectionViewCell.m; sourceTree = "<group>"; };
-		FB551E2422A3DE6900053B5C /* StoryMakeStickerLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerLabelView.m; sourceTree = "<group>"; };
-		FB551E2522A3DE6900053B5C /* StoryMakeSelectColorFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeSelectColorFooterView.h; sourceTree = "<group>"; };
-		FB551E2622A3DE6900053B5C /* StoryMakeStickerColorFootSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerColorFootSingleViewController.m; sourceTree = "<group>"; };
-		FB551E2722A3DE6900053B5C /* StoryMakeToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeToolsView.h; sourceTree = "<group>"; };
-		FB551E2822A3DE6900053B5C /* StoryMakeToolsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeToolsView.m; sourceTree = "<group>"; };
-		FB551E2A22A3DE6900053B5C /* StoryMakeStickerBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerBaseView.h; sourceTree = "<group>"; };
-		FB551E2B22A3DE6900053B5C /* StoryMakeStickerFooterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerFooterCell.h; sourceTree = "<group>"; };
-		FB551E2C22A3DE6900053B5C /* StoryMakeStickerFootSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerFootSingleViewController.h; sourceTree = "<group>"; };
-		FB551E2D22A3DE6900053B5C /* StoryMakeStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerView.m; sourceTree = "<group>"; };
-		FB551E2E22A3DE6900053B5C /* StoryMakeStickerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerImageView.h; sourceTree = "<group>"; };
-		FB551E2F22A3DE6900053B5C /* StoryMakeStickerFooterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerFooterCell.m; sourceTree = "<group>"; };
-		FB551E3022A3DE6900053B5C /* StoryMakeStickerBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerBaseView.m; sourceTree = "<group>"; };
-		FB551E3122A3DE6900053B5C /* StoryMakeStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerView.h; sourceTree = "<group>"; };
-		FB551E3222A3DE6900053B5C /* StoryMakeStickerFootSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerFootSingleViewController.m; sourceTree = "<group>"; };
-		FB551E3322A3DE6900053B5C /* StoryMakeStickerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerImageView.m; sourceTree = "<group>"; };
-		FB551E3522A3DE6900053B5C /* StoryMakeFooterFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeFooterFilterCell.h; sourceTree = "<group>"; };
-		FB551E3622A3DE6900053B5C /* StoryMakeFilterFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeFilterFooterView.m; sourceTree = "<group>"; };
-		FB551E3722A3DE6900053B5C /* StoryMakeFooterFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeFooterFilterCell.m; sourceTree = "<group>"; };
-		FB551E3822A3DE6900053B5C /* StoryMakeFilterFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeFilterFooterView.h; sourceTree = "<group>"; };
-		FB551E3A22A3DE6900053B5C /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
-		FB551E3B22A3DE6900053B5C /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrix.h; sourceTree = "<group>"; };
-		FB551E3C22A3DE6900053B5C /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
-		FB551E3E22A3DE6900053B5C /* LSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDrawView.h; sourceTree = "<group>"; };
-		FB551E4022A3DE6900053B5C /* LJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBaseModel.m; sourceTree = "<group>"; };
-		FB551E4122A3DE6900053B5C /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
-		FB551E4222A3DE6900053B5C /* LJBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBaseModel.h; sourceTree = "<group>"; };
-		FB551E4322A3DE6900053B5C /* LSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDrawView.m; sourceTree = "<group>"; };
 		FB551E4422A3DE6900053B5C /* PuzzleStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleStatus.m; sourceTree = "<group>"; };
 		FB551E4622A3DE6900053B5C /* JXDoubleBreadthFirstSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXDoubleBreadthFirstSearcher.m; sourceTree = "<group>"; };
 		FB551E4722A3DE6900053B5C /* JXBreadthFirstSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXBreadthFirstSearcher.h; sourceTree = "<group>"; };
@@ -242,6 +184,12 @@
 		FBAC193722A53F7C007C7883 /* FLPaintingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPaintingItemCell.h; sourceTree = "<group>"; };
 		FBAF630122A3F81D00BFD8A0 /* SetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetController.h; sourceTree = "<group>"; };
 		FBAF630222A3F81D00BFD8A0 /* SetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetController.m; sourceTree = "<group>"; };
+		FBB1A66422A7641B0044799A /* SPWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPWebViewController.h; sourceTree = "<group>"; };
+		FBB1A66522A7641B0044799A /* SPWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPWebViewController.m; sourceTree = "<group>"; };
+		FBB1A66622A7641B0044799A /* SPWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPWebViewController.xib; sourceTree = "<group>"; };
+		FBB1A66E22A76CBE0044799A /* SPWinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPWinViewController.h; sourceTree = "<group>"; };
+		FBB1A66F22A76CBE0044799A /* SPWinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPWinViewController.m; sourceTree = "<group>"; };
+		FBB1A67022A76CBE0044799A /* SPWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPWinViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,7 +379,6 @@
 				FB551E0A22A3DE6900053B5C /* JXPriorityQueue */,
 				FB551E0D22A3DE6900053B5C /* PuzzlePiece.m */,
 				FB551E0E22A3DE6900053B5C /* CommonTool.h */,
-				FB551E0F22A3DE6900053B5C /* WHStoryMaker */,
 				FB551E4422A3DE6900053B5C /* PuzzleStatus.m */,
 				FB551E4522A3DE6900053B5C /* JXPatchSearch */,
 			);
@@ -445,135 +392,6 @@
 				FB551E0C22A3DE6900053B5C /* JXPriorityQueue.h */,
 			);
 			path = JXPriorityQueue;
-			sourceTree = "<group>";
-		};
-		FB551E0F22A3DE6900053B5C /* WHStoryMaker */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E1022A3DE6900053B5C /* WHStoryMakerHeader.h */,
-				FB551E1122A3DE6900053B5C /* Resource */,
-				FB551E1322A3DE6900053B5C /* StoryMakerHelper */,
-				FB551E1A22A3DE6900053B5C /* StoryMakerEditor */,
-			);
-			path = WHStoryMaker;
-			sourceTree = "<group>";
-		};
-		FB551E1122A3DE6900053B5C /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E1222A3DE6900053B5C /* StoryMaker.xcassets */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		FB551E1322A3DE6900053B5C /* StoryMakerHelper */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E1422A3DE6900053B5C /* CDPMonitorKeyboard.h */,
-				FB551E1522A3DE6900053B5C /* UIImage+imageWithColor.h */,
-				FB551E1622A3DE6900053B5C /* StoryMakerFontManager.m */,
-				FB551E1722A3DE6900053B5C /* UIImage+imageWithColor.m */,
-				FB551E1822A3DE6900053B5C /* CDPMonitorKeyboard.m */,
-				FB551E1922A3DE6900053B5C /* StoryMakerFontManager.h */,
-			);
-			path = StoryMakerHelper;
-			sourceTree = "<group>";
-		};
-		FB551E1A22A3DE6900053B5C /* StoryMakerEditor */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E1B22A3DE6900053B5C /* StoryMakeImageEditorViewController.h */,
-				FB551E1C22A3DE6900053B5C /* StoryMakeImageEditorViewController.m */,
-				FB551E1D22A3DE6900053B5C /* View */,
-			);
-			path = StoryMakerEditor;
-			sourceTree = "<group>";
-		};
-		FB551E1D22A3DE6900053B5C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E1E22A3DE6900053B5C /* Write */,
-				FB551E2722A3DE6900053B5C /* StoryMakeToolsView.h */,
-				FB551E2822A3DE6900053B5C /* StoryMakeToolsView.m */,
-				FB551E2922A3DE6900053B5C /* Sticker */,
-				FB551E3422A3DE6900053B5C /* Filter */,
-				FB551E3D22A3DE6900053B5C /* Draw */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FB551E1E22A3DE6900053B5C /* Write */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E1F22A3DE6900053B5C /* StoryMakeStickerColorFootCollectionViewCell.h */,
-				FB551E2022A3DE6900053B5C /* StoryMakeStickerLabelView.h */,
-				FB551E2122A3DE6900053B5C /* StoryMakeSelectColorFooterView.m */,
-				FB551E2222A3DE6900053B5C /* StoryMakeStickerColorFootSingleViewController.h */,
-				FB551E2322A3DE6900053B5C /* StoryMakeStickerColorFootCollectionViewCell.m */,
-				FB551E2422A3DE6900053B5C /* StoryMakeStickerLabelView.m */,
-				FB551E2522A3DE6900053B5C /* StoryMakeSelectColorFooterView.h */,
-				FB551E2622A3DE6900053B5C /* StoryMakeStickerColorFootSingleViewController.m */,
-			);
-			path = Write;
-			sourceTree = "<group>";
-		};
-		FB551E2922A3DE6900053B5C /* Sticker */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E2A22A3DE6900053B5C /* StoryMakeStickerBaseView.h */,
-				FB551E2B22A3DE6900053B5C /* StoryMakeStickerFooterCell.h */,
-				FB551E2C22A3DE6900053B5C /* StoryMakeStickerFootSingleViewController.h */,
-				FB551E2D22A3DE6900053B5C /* StoryMakeStickerView.m */,
-				FB551E2E22A3DE6900053B5C /* StoryMakeStickerImageView.h */,
-				FB551E2F22A3DE6900053B5C /* StoryMakeStickerFooterCell.m */,
-				FB551E3022A3DE6900053B5C /* StoryMakeStickerBaseView.m */,
-				FB551E3122A3DE6900053B5C /* StoryMakeStickerView.h */,
-				FB551E3222A3DE6900053B5C /* StoryMakeStickerFootSingleViewController.m */,
-				FB551E3322A3DE6900053B5C /* StoryMakeStickerImageView.m */,
-			);
-			path = Sticker;
-			sourceTree = "<group>";
-		};
-		FB551E3422A3DE6900053B5C /* Filter */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E3522A3DE6900053B5C /* StoryMakeFooterFilterCell.h */,
-				FB551E3622A3DE6900053B5C /* StoryMakeFilterFooterView.m */,
-				FB551E3722A3DE6900053B5C /* StoryMakeFooterFilterCell.m */,
-				FB551E3822A3DE6900053B5C /* StoryMakeFilterFooterView.h */,
-				FB551E3922A3DE6900053B5C /* Helper */,
-			);
-			path = Filter;
-			sourceTree = "<group>";
-		};
-		FB551E3922A3DE6900053B5C /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E3A22A3DE6900053B5C /* ImageUtil.m */,
-				FB551E3B22A3DE6900053B5C /* ColorMatrix.h */,
-				FB551E3C22A3DE6900053B5C /* ImageUtil.h */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		FB551E3D22A3DE6900053B5C /* Draw */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E3E22A3DE6900053B5C /* LSDrawView.h */,
-				FB551E3F22A3DE6900053B5C /* YYModel */,
-				FB551E4322A3DE6900053B5C /* LSDrawView.m */,
-			);
-			path = Draw;
-			sourceTree = "<group>";
-		};
-		FB551E3F22A3DE6900053B5C /* YYModel */ = {
-			isa = PBXGroup;
-			children = (
-				FB551E4022A3DE6900053B5C /* LJBaseModel.m */,
-				FB551E4122A3DE6900053B5C /* YYModel.h */,
-				FB551E4222A3DE6900053B5C /* LJBaseModel.h */,
-			);
-			path = YYModel;
 			sourceTree = "<group>";
 		};
 		FB551E4522A3DE6900053B5C /* JXPatchSearch */ = {
@@ -625,6 +443,12 @@
 				FB32321422A695C500009A5C /* SPRecommendCell.h */,
 				FB32321522A695C500009A5C /* SPRecommendCell.m */,
 				FB32321622A695C500009A5C /* SPRecommendCell.xib */,
+				FBB1A66422A7641B0044799A /* SPWebViewController.h */,
+				FBB1A66522A7641B0044799A /* SPWebViewController.m */,
+				FBB1A66622A7641B0044799A /* SPWebViewController.xib */,
+				FBB1A66E22A76CBE0044799A /* SPWinViewController.h */,
+				FBB1A66F22A76CBE0044799A /* SPWinViewController.m */,
+				FBB1A67022A76CBE0044799A /* SPWinViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -734,10 +558,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB1A66822A7641B0044799A /* SPWebViewController.xib in Resources */,
 				FB551E5F22A3DE6A00053B5C /* 3.mp3 in Resources */,
 				FB551E5C22A3DE6A00053B5C /* 5.mp3 in Resources */,
 				FB551E5B22A3DE6A00053B5C /* 4.mp3 in Resources */,
-				FB551E7122A3DE6A00053B5C /* StoryMaker.xcassets in Resources */,
 				FB5172C5229E99B200252968 /* LaunchScreen.storyboard in Resources */,
 				FB551E5622A3DE6A00053B5C /* gamecenter.mp3 in Resources */,
 				FB551E5822A3DE6A00053B5C /* soso.mp3 in Resources */,
@@ -762,6 +586,7 @@
 				FB551E6422A3DE6A00053B5C /* sound_0.mp3 in Resources */,
 				FB5172BD229E99B000252968 /* Main.storyboard in Resources */,
 				FB551E5A22A3DE6A00053B5C /* 6.mp3 in Resources */,
+				FBB1A67222A76CBE0044799A /* SPWinViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,52 +663,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5172BA229E99B000252968 /* ViewController.m in Sources */,
-				FB551E7922A3DE6A00053B5C /* StoryMakeStickerColorFootSingleViewController.m in Sources */,
-				FB551E7422A3DE6A00053B5C /* CDPMonitorKeyboard.m in Sources */,
-				FB551E7622A3DE6A00053B5C /* StoryMakeSelectColorFooterView.m in Sources */,
-				FB551E7722A3DE6A00053B5C /* StoryMakeStickerColorFootCollectionViewCell.m in Sources */,
-				FB551E7D22A3DE6A00053B5C /* StoryMakeStickerBaseView.m in Sources */,
 				FB551E6822A3DE6A00053B5C /* UIImage+Extension.m in Sources */,
 				FB551E9922A3E64200053B5C /* WinBgView.m in Sources */,
 				FB551E8522A3DE6A00053B5C /* PuzzleStatus.m in Sources */,
 				FB551E8722A3DE6A00053B5C /* JXPathSearcher.m in Sources */,
-				FB551E8222A3DE6A00053B5C /* ImageUtil.m in Sources */,
 				FB551E6E22A3DE6A00053B5C /* CommonTool.m in Sources */,
-				FB551E7522A3DE6A00053B5C /* StoryMakeImageEditorViewController.m in Sources */,
 				FB5172B7229E99B000252968 /* AppDelegate.m in Sources */,
-				FB551E8122A3DE6A00053B5C /* StoryMakeFooterFilterCell.m in Sources */,
 				FB32321222A694F400009A5C /* SPRecommendController.m in Sources */,
-				FB551E8422A3DE6A00053B5C /* LSDrawView.m in Sources */,
+				FBB1A66722A7641B0044799A /* SPWebViewController.m in Sources */,
 				FB551E9422A3E61F00053B5C /* TYFWaveButton.m in Sources */,
-				FB551E7222A3DE6A00053B5C /* StoryMakerFontManager.m in Sources */,
 				FB551E8822A3DE6A00053B5C /* JXAStarSearcher.m in Sources */,
 				FB551E9122A3E5B600053B5C /* SPGameVC.m in Sources */,
-				FB551E7B22A3DE6A00053B5C /* StoryMakeStickerView.m in Sources */,
-				FB551E7E22A3DE6A00053B5C /* StoryMakeStickerFootSingleViewController.m in Sources */,
 				FB32320E22A694CB00009A5C /* MYWaterFlowLayout.m in Sources */,
 				FB551E6C22A3DE6A00053B5C /* NSString+Extension.m in Sources */,
-				FB551E7C22A3DE6A00053B5C /* StoryMakeStickerFooterCell.m in Sources */,
+				FBB1A67122A76CBE0044799A /* SPWinViewController.m in Sources */,
 				FB551E8922A3DE6A00053B5C /* JXBreadthFirstSearcher.m in Sources */,
 				FB32321722A695C500009A5C /* SPRecommendCell.m in Sources */,
 				FB551E8A22A3DE6A00053B5C /* AFNet.m in Sources */,
 				FBAF630322A3F81D00BFD8A0 /* SetController.m in Sources */,
-				FB551E8022A3DE6A00053B5C /* StoryMakeFilterFooterView.m in Sources */,
 				FB551E6F22A3DE6A00053B5C /* JXPriorityQueue.m in Sources */,
 				FB551E6D22A3DE6A00053B5C /* UIView+Extension.m in Sources */,
 				FB551E7022A3DE6A00053B5C /* PuzzlePiece.m in Sources */,
 				FB5172C8229E99B200252968 /* main.m in Sources */,
 				FB5172C0229E99B000252968 /* Simplicity.xcdatamodeld in Sources */,
-				FB551E7F22A3DE6A00053B5C /* StoryMakeStickerImageView.m in Sources */,
 				FBAC193822A53F7C007C7883 /* FLPaintingItemCell.m in Sources */,
 				FBAC193322A52290007C7883 /* SPChoosePhotoVC.m in Sources */,
-				FB551E7A22A3DE6A00053B5C /* StoryMakeToolsView.m in Sources */,
 				FB551E8622A3DE6A00053B5C /* JXDoubleBreadthFirstSearcher.m in Sources */,
-				FB551E7822A3DE6A00053B5C /* StoryMakeStickerLabelView.m in Sources */,
-				FB551E8322A3DE6A00053B5C /* LJBaseModel.m in Sources */,
 				FB551E6B22A3DE6A00053B5C /* UIColor+Extension.m in Sources */,
 				FB551E6922A3DE6A00053B5C /* NSObject+Model.m in Sources */,
 				FB551E6A22A3DE6A00053B5C /* NSDate+Extension.m in Sources */,
-				FB551E7322A3DE6A00053B5C /* UIImage+imageWithColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

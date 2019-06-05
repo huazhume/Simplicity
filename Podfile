@@ -10,4 +10,5 @@ target 'Simplicity' do
   pod 'MJRefresh'
   pod 'RSKImageCropper'
   pod 'SDWebImage', '~> 3.8.2'
+  pod 'JPush', '3.1.0'
 end
