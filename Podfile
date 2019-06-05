@@ -9,4 +9,5 @@ target 'Simplicity' do
   pod 'AFNetworking'
   pod 'MJRefresh'
   pod 'RSKImageCropper'
+  pod 'SDWebImage', '~> 3.8.2'
 end

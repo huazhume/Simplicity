@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="217" height="310"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-Zz-uur">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-Zz-uur">
                         <rect key="frame" x="0.0" y="0.0" width="217" height="310"/>
                         <color key="backgroundColor" red="0.85755739084960236" green="0.85755739084960236" blue="0.85755739084960236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>

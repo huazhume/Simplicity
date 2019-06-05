@@ -10,8 +10,9 @@
 #import "SPGameVC.h"
 #import "SetController.h"
 #import "SPRecommendController.h"
+#import <RSKImageCropViewController.h>
 
-@interface ViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate>
+@interface ViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate,RSKImageCropViewControllerDelegate>
 
 @end
 
@@ -61,8 +62,6 @@
     if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera]) {
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
-        picker.videoQuality = UIImagePickerControllerQualityTypeIFrame1280x720;
-        picker.allowsEditing = YES;
         picker.sourceType = sourceType;
         [self presentViewController:picker animated:YES completion:nil];
     } else {
@@ -71,18 +70,17 @@
 }
 
 -(void)imagePickerController:(UIImagePickerController*)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    NSString *type = [info objectForKey:UIImagePickerControllerMediaType];
-    if (![type isEqualToString:@"public.image"]) {
-        return;
-    }
-    [picker dismissViewControllerAnimated:YES completion:nil];
-    UIImage* image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+{ UIImage *sourceImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    SPGameVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SPGameVC"];
-    vc.iconImage = image;
-    vc.originImage = image;
-    [self.navigationController pushViewController:vc animated:YES];
+    RSKImageCropViewController *imageCropVC = [[RSKImageCropViewController alloc] initWithImage:sourceImage cropMode:RSKImageCropModeSquare];
+    imageCropVC.delegate = self;
+    imageCropVC.avoidEmptySpaceAroundImage = YES;
+    [picker pushViewController:imageCropVC animated:YES];
+    
+//    SPGameVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SPGameVC"];
+//    vc.iconImage = image;
+//    vc.originImage = image;
+//    [self.navigationController pushViewController:vc animated:YES];
     
 }
 
@@ -98,8 +96,25 @@
     picker.view.backgroundColor = [UIColor blackColor];
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     picker.delegate = self;
-    picker.allowsEditing = YES;
-    [self presentViewController:picker animated:YES completion:nil];
+    [self.navigationController presentViewController:picker animated:YES completion:nil];
 }
+
+
+#pragma mark - RSKImageCropViewControllerDataSource
+- (void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle {
+    
+    [controller dismissViewControllerAnimated:NO completion:^{
+            SPGameVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SPGameVC"];
+
+            vc.iconImage = croppedImage;
+            vc.originImage = croppedImage;
+            [self.navigationController pushViewController:vc animated:YES];
+    }];
+}
+
+- (void)imageCropViewControllerDidCancelCrop:(nonnull RSKImageCropViewController *)controller {
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

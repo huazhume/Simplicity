@@ -17,6 +17,9 @@ PODS:
   - Masonry (1.1.0)
   - MJRefresh (3.1.16)
   - RSKImageCropper (2.2.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.2.5)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -27,6 +30,7 @@ DEPENDENCIES:
   - Masonry
   - MJRefresh
   - RSKImageCropper
+  - SDWebImage (~> 3.8.2)
   - SVProgressHUD
   - YYKit
 
@@ -36,6 +40,7 @@ SPEC REPOS:
     - Masonry
     - MJRefresh
     - RSKImageCropper
+    - SDWebImage
     - SVProgressHUD
     - YYKit
 
@@ -44,9 +49,10 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 35002dddfe5432accb082f39c262525a5e48d8c2
+PODFILE CHECKSUM: 8767ce6afcd916647858042b4db8cb4d32c11593
 
 COCOAPODS: 1.6.1

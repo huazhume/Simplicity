@@ -9,14 +9,19 @@
 #import "SPRecommendController.h"
 #import "MYWaterFlowLayout.h"
 #import "SPRecommendCell.h"
+#import <UIImageView+WebCache.h>
+#import <RSKImageCropViewController.h>
+#import "SPGameVC.h"
 
 @interface SPRecommendController ()
 <UICollectionViewDataSource,
 MYWaterFlowLayoutDelegate,
-UICollectionViewDelegate>
+UICollectionViewDelegate,
+RSKImageCropViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSMutableArray *datalist;
+@property (nonatomic,weak) RSKImageCropViewController *imageCropVC;
 
 @end
 
@@ -65,6 +70,8 @@ UICollectionViewDelegate>
       @"http://f2.313515.com/abe4fa5bb3a14b1da4e428a70790e6e8.jpg?imageMogr2/thumbnail/300x",
       @"http://f2.313515.com/513b987c5fb146f193cf8e603ccaa8ed.jpg?imageMogr2/thumbnail/300x"];
     
+    self.datalist = [images copy];
+    
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName : [UIFont boldSystemFontOfSize:17]}];
 }
 
@@ -86,12 +93,14 @@ UICollectionViewDelegate>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 100;
+    return self.datalist.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SPRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SPRecommendCell" forIndexPath:indexPath];
+    
+    [cell.image sd_setImageWithURL:[NSURL URLWithString:self.datalist[indexPath.row]]];
     
     return cell;
 }
@@ -105,7 +114,29 @@ UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
    
+    SPRecommendCell *cell = (SPRecommendCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    RSKImageCropViewController *imageCropVC = [[RSKImageCropViewController alloc] initWithImage:cell.image.image cropMode:RSKImageCropModeSquare];
+    imageCropVC = imageCropVC;
+    imageCropVC.delegate = self;
+    self.imageCropVC = imageCropVC;
+    [self.navigationController pushViewController:imageCropVC animated:YES];
     
+}
+
+#pragma mark - RSKImageCropViewControllerDataSource
+- (void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle {
+    SPGameVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SPGameVC"];
+    
+    NSMutableArray *viewCtrs = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
+    [viewCtrs removeObject:self.imageCropVC];
+    [self.navigationController setViewControllers:viewCtrs animated:NO];
+    vc.iconImage = croppedImage;
+    vc.originImage = croppedImage;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)imageCropViewControllerDidCancelCrop:(nonnull RSKImageCropViewController *)controller {
+     [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - Setter & Getter

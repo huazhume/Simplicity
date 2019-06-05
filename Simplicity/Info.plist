@@ -41,5 +41,18 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>App needs to access the camera. Is it allowed to access the camera?</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>App needs to access the album. Is it allowed to access the album?</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>App needs to access the album. Is it allowed to access the album?</string>
 </dict>
 </plist>
