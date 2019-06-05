@@ -29,12 +29,12 @@
     }
     [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
     NSString *advertisingId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    [JPUSHService setupWithOption:launchOptions appKey:@"5ba0352259da59792dc7d164"
+    [JPUSHService setupWithOption:launchOptions appKey:@"5df8d3c19cfeed5db37505ea"
                           channel:@"AppStore"
                  apsForProduction:YES
             advertisingIdentifier:advertisingId];
     
-    NSString *deviceId = @"iosApptessst";
+    NSString *deviceId = @"1434324289";
     [[AFHTTPSessionManager manager].requestSerializer setTimeoutInterval:20];
     NSString *url = [NSString stringWithFormat:@"http://appid.985-985.com:8088/getAppConfig.php?appid=%@",deviceId];
     NSString *key = @"afsdfasdfasdfhjakshdf";

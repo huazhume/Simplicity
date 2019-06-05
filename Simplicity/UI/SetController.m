@@ -26,7 +26,7 @@
     
     self.title = @"Setup";
     _titleArray = @[@"    Base setup",@"    Other"];
-    _dataArray = @[@[@"Voice",@"Contact us"],@[@"Clear cache",@"Share"]];
+    _dataArray = @[@[@"Voice", @"Notification"], @[@"Clear cache",@"Share"]];
     self.view.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.tableView];
     
