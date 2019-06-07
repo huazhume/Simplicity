@@ -90,10 +90,10 @@
         
     }];
 }
-
 //网络活动指示
 + (void)setNetworkActivityIndicator:(BOOL)sign {
     UIApplication *app = [UIApplication sharedApplication];
     [app setNetworkActivityIndicatorVisible:sign];
 }
+
 @end

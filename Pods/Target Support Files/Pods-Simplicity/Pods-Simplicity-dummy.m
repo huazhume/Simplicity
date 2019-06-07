@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_Simplicity : NSObject
+@interface PodsDummy_Pods_EnjoySplicing : NSObject
 @end
-@implementation PodsDummy_Pods_Simplicity
+@implementation PodsDummy_Pods_EnjoySplicing
 @end

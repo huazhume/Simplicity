@@ -1,8 +1,8 @@
 //
 //  UIColor+Extension.m
-//  Puzzle
+//  EnjoyGame
 //
-//  Created by duodian on 2018/6/26.
+//  Created by enjoy on 2018/6/26.
 //  Copyright © 2018年 丁远帅. All rights reserved.
 //
 

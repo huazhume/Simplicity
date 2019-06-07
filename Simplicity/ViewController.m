@@ -1,17 +1,17 @@
 //
 //  ViewController.m
-//  Simplicity
+//  EnjoySplicing
 //
-//  Created by xiaobai zhang on 2019/5/29.
-//  Copyright © 2019 Simplicity. All rights reserved.
+//  Created by enjoy on 2019/5/29.
+//  Copyright © 2019 EnjoySplicing. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "SPGameVC.h"
-#import "SetController.h"
-#import "SPRecommendController.h"
+#import "ESGameHomeVC.h"
+#import "ESGameSetVC.h"
+#import "ESGameRecommendVC.h"
 #import <RSKImageCropViewController.h>
-#import "SPLaunchVC.h"
+#import "ESGameLaunchVC.h"
 
 @interface ViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate,RSKImageCropViewControllerDelegate>
 
@@ -21,7 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController pushViewController:[SPLaunchVC new] animated:NO];
+    
+    NSString *key = @"pofsdfgihsdgj";
+    BOOL isState = [[NSUserDefaults standardUserDefaults] boolForKey:key];
+    if (!isState) {
+        [self.navigationController pushViewController:[ESGameLaunchVC new] animated:NO];
+    }
     self.navigationController.navigationBarHidden = YES;
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -39,7 +44,7 @@
 }
 - (IBAction)setting:(id)sender {
     
-    SetController *vc = [SetController new];
+    ESGameSetVC *vc = [ESGameSetVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -52,7 +57,7 @@
     } else if (buttonIndex == 1) {
         [self takePhoto];
     } else if (buttonIndex == 2) {
-        SPRecommendController *vc = [SPRecommendController new];
+        ESGameRecommendVC *vc = [ESGameRecommendVC new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
@@ -99,7 +104,7 @@
 - (void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle {
     
     [controller dismissViewControllerAnimated:NO completion:^{
-            SPGameVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SPGameVC"];
+            ESGameHomeVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ESGameHomeVC"];
             vc.iconImage = croppedImage;
             vc.originImage = croppedImage;
             [self.navigationController pushViewController:vc animated:YES];

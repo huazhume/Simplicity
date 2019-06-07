@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		18B09B6362DE1EDF94696466 /* libPods-Simplicity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C663D769C430E4FABFEF4FE /* libPods-Simplicity.a */; };
-		FB32320E22A694CB00009A5C /* MYWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32320D22A694CB00009A5C /* MYWaterFlowLayout.m */; };
-		FB32321222A694F400009A5C /* SPRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32321022A694F400009A5C /* SPRecommendController.m */; };
-		FB32321322A694F400009A5C /* SPRecommendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB32321122A694F400009A5C /* SPRecommendController.xib */; };
-		FB32321722A695C500009A5C /* SPRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32321522A695C500009A5C /* SPRecommendCell.m */; };
-		FB32321822A695C500009A5C /* SPRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB32321622A695C500009A5C /* SPRecommendCell.xib */; };
+		FB32320E22A694CB00009A5C /* ESGameFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32320D22A694CB00009A5C /* ESGameFlowLayout.m */; };
+		FB32321222A694F400009A5C /* ESGameRecommendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32321022A694F400009A5C /* ESGameRecommendVC.m */; };
+		FB32321322A694F400009A5C /* ESGameRecommendVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB32321122A694F400009A5C /* ESGameRecommendVC.xib */; };
+		FB32321722A695C500009A5C /* ESGameReContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32321522A695C500009A5C /* ESGameReContentCell.m */; };
+		FB32321822A695C500009A5C /* ESGameReContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB32321622A695C500009A5C /* ESGameReContentCell.xib */; };
 		FB5172B7229E99B000252968 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5172B6229E99B000252968 /* AppDelegate.m */; };
 		FB5172BA229E99B000252968 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5172B9229E99B000252968 /* ViewController.m */; };
 		FB5172BD229E99B000252968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5172BB229E99B000252968 /* Main.storyboard */; };
@@ -47,30 +47,28 @@
 		FB551E6B22A3DE6A00053B5C /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0222A3DE6900053B5C /* UIColor+Extension.m */; };
 		FB551E6C22A3DE6A00053B5C /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0322A3DE6900053B5C /* NSString+Extension.m */; };
 		FB551E6D22A3DE6A00053B5C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0522A3DE6900053B5C /* UIView+Extension.m */; };
-		FB551E6E22A3DE6A00053B5C /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0722A3DE6900053B5C /* CommonTool.m */; };
-		FB551E6F22A3DE6A00053B5C /* JXPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0B22A3DE6900053B5C /* JXPriorityQueue.m */; };
-		FB551E7022A3DE6A00053B5C /* PuzzlePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0D22A3DE6900053B5C /* PuzzlePiece.m */; };
-		FB551E8522A3DE6A00053B5C /* PuzzleStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4422A3DE6900053B5C /* PuzzleStatus.m */; };
-		FB551E8622A3DE6A00053B5C /* JXDoubleBreadthFirstSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4622A3DE6900053B5C /* JXDoubleBreadthFirstSearcher.m */; };
-		FB551E8722A3DE6A00053B5C /* JXPathSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4822A3DE6900053B5C /* JXPathSearcher.m */; };
-		FB551E8822A3DE6A00053B5C /* JXAStarSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4922A3DE6900053B5C /* JXAStarSearcher.m */; };
-		FB551E8922A3DE6A00053B5C /* JXBreadthFirstSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4B22A3DE6900053B5C /* JXBreadthFirstSearcher.m */; };
+		FB551E6E22A3DE6A00053B5C /* ESGameCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0722A3DE6900053B5C /* ESGameCommonTool.m */; };
+		FB551E6F22A3DE6A00053B5C /* ESPriorityGameQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0B22A3DE6900053B5C /* ESPriorityGameQueue.m */; };
+		FB551E7022A3DE6A00053B5C /* ESPuzzleGamePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E0D22A3DE6900053B5C /* ESPuzzleGamePiece.m */; };
+		FB551E8522A3DE6A00053B5C /* ESPuzzleGameStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4422A3DE6900053B5C /* ESPuzzleGameStatus.m */; };
+		FB551E8622A3DE6A00053B5C /* ESDoubleGameSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4622A3DE6900053B5C /* ESDoubleGameSearcher.m */; };
+		FB551E8722A3DE6A00053B5C /* ESGamePathSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4822A3DE6900053B5C /* ESGamePathSearch.m */; };
+		FB551E8822A3DE6A00053B5C /* ESStarGameSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4922A3DE6900053B5C /* ESStarGameSearcher.m */; };
+		FB551E8922A3DE6A00053B5C /* ESBreadthGameSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4B22A3DE6900053B5C /* ESBreadthGameSearcher.m */; };
 		FB551E8A22A3DE6A00053B5C /* AFNet.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E4E22A3DE6900053B5C /* AFNet.m */; };
-		FB551E9122A3E5B600053B5C /* SPGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9022A3E5B600053B5C /* SPGameVC.m */; };
-		FB551E9422A3E61F00053B5C /* TYFWaveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9222A3E61F00053B5C /* TYFWaveButton.m */; };
-		FB551E9822A3E64200053B5C /* WinBgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB551E9522A3E64200053B5C /* WinBgView.xib */; };
-		FB551E9922A3E64200053B5C /* WinBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9722A3E64200053B5C /* WinBgView.m */; };
-		FBAC193322A52290007C7883 /* SPChoosePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC193122A52290007C7883 /* SPChoosePhotoVC.m */; };
-		FBAC193422A52290007C7883 /* SPChoosePhotoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAC193222A52290007C7883 /* SPChoosePhotoVC.xib */; };
-		FBAC193822A53F7C007C7883 /* FLPaintingItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC193522A53F7B007C7883 /* FLPaintingItemCell.m */; };
-		FBAC193922A53F7C007C7883 /* FLPaintingItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAC193622A53F7C007C7883 /* FLPaintingItemCell.xib */; };
-		FBAF630322A3F81D00BFD8A0 /* SetController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAF630222A3F81D00BFD8A0 /* SetController.m */; };
-		FBB1A66722A7641B0044799A /* SPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A66522A7641B0044799A /* SPWebViewController.m */; };
-		FBB1A66822A7641B0044799A /* SPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A66622A7641B0044799A /* SPWebViewController.xib */; };
-		FBB1A67122A76CBE0044799A /* SPWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A66F22A76CBE0044799A /* SPWinViewController.m */; };
-		FBB1A67222A76CBE0044799A /* SPWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67022A76CBE0044799A /* SPWinViewController.xib */; };
-		FBB1A67622A774710044799A /* SPLaunchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A67422A774710044799A /* SPLaunchVC.m */; };
-		FBB1A67722A774710044799A /* SPLaunchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67522A774710044799A /* SPLaunchVC.xib */; };
+		FB551E9122A3E5B600053B5C /* ESGameHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9022A3E5B600053B5C /* ESGameHomeVC.m */; };
+		FB551E9422A3E61F00053B5C /* ESGameWaveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB551E9222A3E61F00053B5C /* ESGameWaveButton.m */; };
+		FBAC193322A52290007C7883 /* ESGameChoosePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC193122A52290007C7883 /* ESGameChoosePhotoVC.m */; };
+		FBAC193422A52290007C7883 /* ESGameChoosePhotoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAC193222A52290007C7883 /* ESGameChoosePhotoVC.xib */; };
+		FBAC193822A53F7C007C7883 /* ESGameRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC193522A53F7B007C7883 /* ESGameRecommendCell.m */; };
+		FBAC193922A53F7C007C7883 /* ESGameRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAC193622A53F7C007C7883 /* ESGameRecommendCell.xib */; };
+		FBAF630322A3F81D00BFD8A0 /* ESGameSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAF630222A3F81D00BFD8A0 /* ESGameSetVC.m */; };
+		FBB1A66722A7641B0044799A /* ESGameWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A66522A7641B0044799A /* ESGameWebVC.m */; };
+		FBB1A66822A7641B0044799A /* ESGameWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A66622A7641B0044799A /* ESGameWebVC.xib */; };
+		FBB1A67122A76CBE0044799A /* ESGameWinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A66F22A76CBE0044799A /* ESGameWinVC.m */; };
+		FBB1A67222A76CBE0044799A /* ESGameWinVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67022A76CBE0044799A /* ESGameWinVC.xib */; };
+		FBB1A67622A774710044799A /* ESGameLaunchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB1A67422A774710044799A /* ESGameLaunchVC.m */; };
+		FBB1A67722A774710044799A /* ESGameLaunchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67522A774710044799A /* ESGameLaunchVC.xib */; };
 		FBB1A67A22A793C50044799A /* PrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67822A793C50044799A /* PrivacyPolicy.html */; };
 		FBB1A67B22A793C50044799A /* UserAgreement.html in Resources */ = {isa = PBXBuildFile; fileRef = FBB1A67922A793C50044799A /* UserAgreement.html */; };
 /* End PBXBuildFile section */
@@ -96,14 +94,14 @@
 		5AE2D3048E2166E9212962D3 /* Pods-Simplicity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplicity.debug.xcconfig"; path = "Target Support Files/Pods-Simplicity/Pods-Simplicity.debug.xcconfig"; sourceTree = "<group>"; };
 		7C663D769C430E4FABFEF4FE /* libPods-Simplicity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simplicity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97191A99607BE977B07F008 /* Pods-Simplicity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplicity.release.xcconfig"; path = "Target Support Files/Pods-Simplicity/Pods-Simplicity.release.xcconfig"; sourceTree = "<group>"; };
-		FB32320C22A694CB00009A5C /* MYWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWaterFlowLayout.h; sourceTree = "<group>"; };
-		FB32320D22A694CB00009A5C /* MYWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWaterFlowLayout.m; sourceTree = "<group>"; };
-		FB32320F22A694F400009A5C /* SPRecommendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRecommendController.h; sourceTree = "<group>"; };
-		FB32321022A694F400009A5C /* SPRecommendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRecommendController.m; sourceTree = "<group>"; };
-		FB32321122A694F400009A5C /* SPRecommendController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPRecommendController.xib; sourceTree = "<group>"; };
-		FB32321422A695C500009A5C /* SPRecommendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRecommendCell.h; sourceTree = "<group>"; };
-		FB32321522A695C500009A5C /* SPRecommendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRecommendCell.m; sourceTree = "<group>"; };
-		FB32321622A695C500009A5C /* SPRecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPRecommendCell.xib; sourceTree = "<group>"; };
+		FB32320C22A694CB00009A5C /* ESGameFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGameFlowLayout.h; sourceTree = "<group>"; };
+		FB32320D22A694CB00009A5C /* ESGameFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGameFlowLayout.m; sourceTree = "<group>"; };
+		FB32320F22A694F400009A5C /* ESGameRecommendVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESGameRecommendVC.h; sourceTree = "<group>"; };
+		FB32321022A694F400009A5C /* ESGameRecommendVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESGameRecommendVC.m; sourceTree = "<group>"; };
+		FB32321122A694F400009A5C /* ESGameRecommendVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ESGameRecommendVC.xib; sourceTree = "<group>"; };
+		FB32321422A695C500009A5C /* ESGameReContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESGameReContentCell.h; sourceTree = "<group>"; };
+		FB32321522A695C500009A5C /* ESGameReContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESGameReContentCell.m; sourceTree = "<group>"; };
+		FB32321622A695C500009A5C /* ESGameReContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ESGameReContentCell.xib; sourceTree = "<group>"; };
 		FB5172B2229E99B000252968 /* Simplicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simplicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5172B5229E99B000252968 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB5172B6229E99B000252968 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -152,51 +150,48 @@
 		FB551E0322A3DE6900053B5C /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		FB551E0422A3DE6900053B5C /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		FB551E0522A3DE6900053B5C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		FB551E0722A3DE6900053B5C /* CommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
-		FB551E0822A3DE6900053B5C /* PuzzlePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzlePiece.h; sourceTree = "<group>"; };
-		FB551E0922A3DE6900053B5C /* PuzzleStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleStatus.h; sourceTree = "<group>"; };
-		FB551E0B22A3DE6900053B5C /* JXPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPriorityQueue.m; sourceTree = "<group>"; };
-		FB551E0C22A3DE6900053B5C /* JXPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPriorityQueue.h; sourceTree = "<group>"; };
-		FB551E0D22A3DE6900053B5C /* PuzzlePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzlePiece.m; sourceTree = "<group>"; };
-		FB551E0E22A3DE6900053B5C /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
-		FB551E4422A3DE6900053B5C /* PuzzleStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleStatus.m; sourceTree = "<group>"; };
-		FB551E4622A3DE6900053B5C /* JXDoubleBreadthFirstSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXDoubleBreadthFirstSearcher.m; sourceTree = "<group>"; };
-		FB551E4722A3DE6900053B5C /* JXBreadthFirstSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXBreadthFirstSearcher.h; sourceTree = "<group>"; };
-		FB551E4822A3DE6900053B5C /* JXPathSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPathSearcher.m; sourceTree = "<group>"; };
-		FB551E4922A3DE6900053B5C /* JXAStarSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAStarSearcher.m; sourceTree = "<group>"; };
-		FB551E4A22A3DE6900053B5C /* JXDoubleBreadthFirstSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXDoubleBreadthFirstSearcher.h; sourceTree = "<group>"; };
-		FB551E4B22A3DE6900053B5C /* JXBreadthFirstSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXBreadthFirstSearcher.m; sourceTree = "<group>"; };
-		FB551E4C22A3DE6900053B5C /* JXAStarSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXAStarSearcher.h; sourceTree = "<group>"; };
-		FB551E4D22A3DE6900053B5C /* JXPathSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPathSearcher.h; sourceTree = "<group>"; };
+		FB551E0722A3DE6900053B5C /* ESGameCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGameCommonTool.m; sourceTree = "<group>"; };
+		FB551E0822A3DE6900053B5C /* ESPuzzleGamePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPuzzleGamePiece.h; sourceTree = "<group>"; };
+		FB551E0922A3DE6900053B5C /* ESPuzzleGameStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPuzzleGameStatus.h; sourceTree = "<group>"; };
+		FB551E0B22A3DE6900053B5C /* ESPriorityGameQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPriorityGameQueue.m; sourceTree = "<group>"; };
+		FB551E0C22A3DE6900053B5C /* ESPriorityGameQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPriorityGameQueue.h; sourceTree = "<group>"; };
+		FB551E0D22A3DE6900053B5C /* ESPuzzleGamePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPuzzleGamePiece.m; sourceTree = "<group>"; };
+		FB551E0E22A3DE6900053B5C /* ESGameCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGameCommonTool.h; sourceTree = "<group>"; };
+		FB551E4422A3DE6900053B5C /* ESPuzzleGameStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPuzzleGameStatus.m; sourceTree = "<group>"; };
+		FB551E4622A3DE6900053B5C /* ESDoubleGameSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDoubleGameSearcher.m; sourceTree = "<group>"; };
+		FB551E4722A3DE6900053B5C /* ESBreadthGameSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESBreadthGameSearcher.h; sourceTree = "<group>"; };
+		FB551E4822A3DE6900053B5C /* ESGamePathSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGamePathSearch.m; sourceTree = "<group>"; };
+		FB551E4922A3DE6900053B5C /* ESStarGameSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESStarGameSearcher.m; sourceTree = "<group>"; };
+		FB551E4A22A3DE6900053B5C /* ESDoubleGameSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDoubleGameSearcher.h; sourceTree = "<group>"; };
+		FB551E4B22A3DE6900053B5C /* ESBreadthGameSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESBreadthGameSearcher.m; sourceTree = "<group>"; };
+		FB551E4C22A3DE6900053B5C /* ESStarGameSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESStarGameSearcher.h; sourceTree = "<group>"; };
+		FB551E4D22A3DE6900053B5C /* ESGamePathSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGamePathSearch.h; sourceTree = "<group>"; };
 		FB551E4E22A3DE6900053B5C /* AFNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNet.m; sourceTree = "<group>"; };
 		FB551E5022A3DE6A00053B5C /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		FB551E5122A3DE6A00053B5C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FB551E5222A3DE6A00053B5C /* AFNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNet.h; sourceTree = "<group>"; };
 		FB551E8B22A3E04B00053B5C /* Simplicity-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simplicity-Swift.h"; sourceTree = "<group>"; };
-		FB551E8F22A3E5B600053B5C /* SPGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGameVC.h; sourceTree = "<group>"; };
-		FB551E9022A3E5B600053B5C /* SPGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGameVC.m; sourceTree = "<group>"; };
-		FB551E9222A3E61F00053B5C /* TYFWaveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFWaveButton.m; sourceTree = "<group>"; };
-		FB551E9322A3E61F00053B5C /* TYFWaveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFWaveButton.h; sourceTree = "<group>"; };
-		FB551E9522A3E64200053B5C /* WinBgView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinBgView.xib; sourceTree = "<group>"; };
-		FB551E9622A3E64200053B5C /* WinBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinBgView.h; sourceTree = "<group>"; };
-		FB551E9722A3E64200053B5C /* WinBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinBgView.m; sourceTree = "<group>"; };
-		FBAC193022A52290007C7883 /* SPChoosePhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPChoosePhotoVC.h; sourceTree = "<group>"; };
-		FBAC193122A52290007C7883 /* SPChoosePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPChoosePhotoVC.m; sourceTree = "<group>"; };
-		FBAC193222A52290007C7883 /* SPChoosePhotoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPChoosePhotoVC.xib; sourceTree = "<group>"; };
-		FBAC193522A53F7B007C7883 /* FLPaintingItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPaintingItemCell.m; sourceTree = "<group>"; };
-		FBAC193622A53F7C007C7883 /* FLPaintingItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLPaintingItemCell.xib; sourceTree = "<group>"; };
-		FBAC193722A53F7C007C7883 /* FLPaintingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPaintingItemCell.h; sourceTree = "<group>"; };
-		FBAF630122A3F81D00BFD8A0 /* SetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetController.h; sourceTree = "<group>"; };
-		FBAF630222A3F81D00BFD8A0 /* SetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetController.m; sourceTree = "<group>"; };
-		FBB1A66422A7641B0044799A /* SPWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPWebViewController.h; sourceTree = "<group>"; };
-		FBB1A66522A7641B0044799A /* SPWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPWebViewController.m; sourceTree = "<group>"; };
-		FBB1A66622A7641B0044799A /* SPWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPWebViewController.xib; sourceTree = "<group>"; };
-		FBB1A66E22A76CBE0044799A /* SPWinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPWinViewController.h; sourceTree = "<group>"; };
-		FBB1A66F22A76CBE0044799A /* SPWinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPWinViewController.m; sourceTree = "<group>"; };
-		FBB1A67022A76CBE0044799A /* SPWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPWinViewController.xib; sourceTree = "<group>"; };
-		FBB1A67322A774710044799A /* SPLaunchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLaunchVC.h; sourceTree = "<group>"; };
-		FBB1A67422A774710044799A /* SPLaunchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLaunchVC.m; sourceTree = "<group>"; };
-		FBB1A67522A774710044799A /* SPLaunchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPLaunchVC.xib; sourceTree = "<group>"; };
+		FB551E8F22A3E5B600053B5C /* ESGameHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGameHomeVC.h; sourceTree = "<group>"; };
+		FB551E9022A3E5B600053B5C /* ESGameHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGameHomeVC.m; sourceTree = "<group>"; };
+		FB551E9222A3E61F00053B5C /* ESGameWaveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGameWaveButton.m; sourceTree = "<group>"; };
+		FB551E9322A3E61F00053B5C /* ESGameWaveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGameWaveButton.h; sourceTree = "<group>"; };
+		FBAC193022A52290007C7883 /* ESGameChoosePhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESGameChoosePhotoVC.h; sourceTree = "<group>"; };
+		FBAC193122A52290007C7883 /* ESGameChoosePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESGameChoosePhotoVC.m; sourceTree = "<group>"; };
+		FBAC193222A52290007C7883 /* ESGameChoosePhotoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ESGameChoosePhotoVC.xib; sourceTree = "<group>"; };
+		FBAC193522A53F7B007C7883 /* ESGameRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGameRecommendCell.m; sourceTree = "<group>"; };
+		FBAC193622A53F7C007C7883 /* ESGameRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ESGameRecommendCell.xib; sourceTree = "<group>"; };
+		FBAC193722A53F7C007C7883 /* ESGameRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGameRecommendCell.h; sourceTree = "<group>"; };
+		FBAF630122A3F81D00BFD8A0 /* ESGameSetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGameSetVC.h; sourceTree = "<group>"; };
+		FBAF630222A3F81D00BFD8A0 /* ESGameSetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGameSetVC.m; sourceTree = "<group>"; };
+		FBB1A66422A7641B0044799A /* ESGameWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESGameWebVC.h; sourceTree = "<group>"; };
+		FBB1A66522A7641B0044799A /* ESGameWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESGameWebVC.m; sourceTree = "<group>"; };
+		FBB1A66622A7641B0044799A /* ESGameWebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ESGameWebVC.xib; sourceTree = "<group>"; };
+		FBB1A66E22A76CBE0044799A /* ESGameWinVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESGameWinVC.h; sourceTree = "<group>"; };
+		FBB1A66F22A76CBE0044799A /* ESGameWinVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESGameWinVC.m; sourceTree = "<group>"; };
+		FBB1A67022A76CBE0044799A /* ESGameWinVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ESGameWinVC.xib; sourceTree = "<group>"; };
+		FBB1A67322A774710044799A /* ESGameLaunchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGameLaunchVC.h; sourceTree = "<group>"; };
+		FBB1A67422A774710044799A /* ESGameLaunchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGameLaunchVC.m; sourceTree = "<group>"; };
+		FBB1A67522A774710044799A /* ESGameLaunchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ESGameLaunchVC.xib; sourceTree = "<group>"; };
 		FBB1A67822A793C50044799A /* PrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy.html; sourceTree = "<group>"; };
 		FBB1A67922A793C50044799A /* UserAgreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UserAgreement.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -382,13 +377,13 @@
 		FB551E0622A3DE6900053B5C /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				FB551E0722A3DE6900053B5C /* CommonTool.m */,
-				FB551E0822A3DE6900053B5C /* PuzzlePiece.h */,
-				FB551E0922A3DE6900053B5C /* PuzzleStatus.h */,
+				FB551E0722A3DE6900053B5C /* ESGameCommonTool.m */,
+				FB551E0822A3DE6900053B5C /* ESPuzzleGamePiece.h */,
+				FB551E0922A3DE6900053B5C /* ESPuzzleGameStatus.h */,
 				FB551E0A22A3DE6900053B5C /* JXPriorityQueue */,
-				FB551E0D22A3DE6900053B5C /* PuzzlePiece.m */,
-				FB551E0E22A3DE6900053B5C /* CommonTool.h */,
-				FB551E4422A3DE6900053B5C /* PuzzleStatus.m */,
+				FB551E0D22A3DE6900053B5C /* ESPuzzleGamePiece.m */,
+				FB551E0E22A3DE6900053B5C /* ESGameCommonTool.h */,
+				FB551E4422A3DE6900053B5C /* ESPuzzleGameStatus.m */,
 				FB551E4522A3DE6900053B5C /* JXPatchSearch */,
 			);
 			path = Tool;
@@ -397,8 +392,8 @@
 		FB551E0A22A3DE6900053B5C /* JXPriorityQueue */ = {
 			isa = PBXGroup;
 			children = (
-				FB551E0B22A3DE6900053B5C /* JXPriorityQueue.m */,
-				FB551E0C22A3DE6900053B5C /* JXPriorityQueue.h */,
+				FB551E0B22A3DE6900053B5C /* ESPriorityGameQueue.m */,
+				FB551E0C22A3DE6900053B5C /* ESPriorityGameQueue.h */,
 			);
 			path = JXPriorityQueue;
 			sourceTree = "<group>";
@@ -406,14 +401,14 @@
 		FB551E4522A3DE6900053B5C /* JXPatchSearch */ = {
 			isa = PBXGroup;
 			children = (
-				FB551E4622A3DE6900053B5C /* JXDoubleBreadthFirstSearcher.m */,
-				FB551E4722A3DE6900053B5C /* JXBreadthFirstSearcher.h */,
-				FB551E4822A3DE6900053B5C /* JXPathSearcher.m */,
-				FB551E4922A3DE6900053B5C /* JXAStarSearcher.m */,
-				FB551E4A22A3DE6900053B5C /* JXDoubleBreadthFirstSearcher.h */,
-				FB551E4B22A3DE6900053B5C /* JXBreadthFirstSearcher.m */,
-				FB551E4C22A3DE6900053B5C /* JXAStarSearcher.h */,
-				FB551E4D22A3DE6900053B5C /* JXPathSearcher.h */,
+				FB551E4622A3DE6900053B5C /* ESDoubleGameSearcher.m */,
+				FB551E4722A3DE6900053B5C /* ESBreadthGameSearcher.h */,
+				FB551E4822A3DE6900053B5C /* ESGamePathSearch.m */,
+				FB551E4922A3DE6900053B5C /* ESStarGameSearcher.m */,
+				FB551E4A22A3DE6900053B5C /* ESDoubleGameSearcher.h */,
+				FB551E4B22A3DE6900053B5C /* ESBreadthGameSearcher.m */,
+				FB551E4C22A3DE6900053B5C /* ESStarGameSearcher.h */,
+				FB551E4D22A3DE6900053B5C /* ESGamePathSearch.h */,
 			);
 			path = JXPatchSearch;
 			sourceTree = "<group>";
@@ -431,38 +426,35 @@
 			children = (
 				FBB1A67822A793C50044799A /* PrivacyPolicy.html */,
 				FBB1A67922A793C50044799A /* UserAgreement.html */,
-				FBB1A67322A774710044799A /* SPLaunchVC.h */,
-				FBB1A67422A774710044799A /* SPLaunchVC.m */,
-				FBB1A67522A774710044799A /* SPLaunchVC.xib */,
-				FB32320C22A694CB00009A5C /* MYWaterFlowLayout.h */,
-				FB32320D22A694CB00009A5C /* MYWaterFlowLayout.m */,
-				FBAC193722A53F7C007C7883 /* FLPaintingItemCell.h */,
-				FBAC193522A53F7B007C7883 /* FLPaintingItemCell.m */,
-				FBAC193622A53F7C007C7883 /* FLPaintingItemCell.xib */,
-				FBAF630122A3F81D00BFD8A0 /* SetController.h */,
-				FBAF630222A3F81D00BFD8A0 /* SetController.m */,
-				FB551E9622A3E64200053B5C /* WinBgView.h */,
-				FB551E9722A3E64200053B5C /* WinBgView.m */,
-				FB551E9522A3E64200053B5C /* WinBgView.xib */,
-				FB551E9322A3E61F00053B5C /* TYFWaveButton.h */,
-				FB551E9222A3E61F00053B5C /* TYFWaveButton.m */,
-				FB551E8F22A3E5B600053B5C /* SPGameVC.h */,
-				FB551E9022A3E5B600053B5C /* SPGameVC.m */,
-				FBAC193022A52290007C7883 /* SPChoosePhotoVC.h */,
-				FBAC193122A52290007C7883 /* SPChoosePhotoVC.m */,
-				FBAC193222A52290007C7883 /* SPChoosePhotoVC.xib */,
-				FB32320F22A694F400009A5C /* SPRecommendController.h */,
-				FB32321022A694F400009A5C /* SPRecommendController.m */,
-				FB32321122A694F400009A5C /* SPRecommendController.xib */,
-				FB32321422A695C500009A5C /* SPRecommendCell.h */,
-				FB32321522A695C500009A5C /* SPRecommendCell.m */,
-				FB32321622A695C500009A5C /* SPRecommendCell.xib */,
-				FBB1A66422A7641B0044799A /* SPWebViewController.h */,
-				FBB1A66522A7641B0044799A /* SPWebViewController.m */,
-				FBB1A66622A7641B0044799A /* SPWebViewController.xib */,
-				FBB1A66E22A76CBE0044799A /* SPWinViewController.h */,
-				FBB1A66F22A76CBE0044799A /* SPWinViewController.m */,
-				FBB1A67022A76CBE0044799A /* SPWinViewController.xib */,
+				FBB1A67322A774710044799A /* ESGameLaunchVC.h */,
+				FBB1A67422A774710044799A /* ESGameLaunchVC.m */,
+				FBB1A67522A774710044799A /* ESGameLaunchVC.xib */,
+				FB32320C22A694CB00009A5C /* ESGameFlowLayout.h */,
+				FB32320D22A694CB00009A5C /* ESGameFlowLayout.m */,
+				FBAC193722A53F7C007C7883 /* ESGameRecommendCell.h */,
+				FBAC193522A53F7B007C7883 /* ESGameRecommendCell.m */,
+				FBAC193622A53F7C007C7883 /* ESGameRecommendCell.xib */,
+				FBAF630122A3F81D00BFD8A0 /* ESGameSetVC.h */,
+				FBAF630222A3F81D00BFD8A0 /* ESGameSetVC.m */,
+				FB551E9322A3E61F00053B5C /* ESGameWaveButton.h */,
+				FB551E9222A3E61F00053B5C /* ESGameWaveButton.m */,
+				FB551E8F22A3E5B600053B5C /* ESGameHomeVC.h */,
+				FB551E9022A3E5B600053B5C /* ESGameHomeVC.m */,
+				FBAC193022A52290007C7883 /* ESGameChoosePhotoVC.h */,
+				FBAC193122A52290007C7883 /* ESGameChoosePhotoVC.m */,
+				FBAC193222A52290007C7883 /* ESGameChoosePhotoVC.xib */,
+				FB32320F22A694F400009A5C /* ESGameRecommendVC.h */,
+				FB32321022A694F400009A5C /* ESGameRecommendVC.m */,
+				FB32321122A694F400009A5C /* ESGameRecommendVC.xib */,
+				FB32321422A695C500009A5C /* ESGameReContentCell.h */,
+				FB32321522A695C500009A5C /* ESGameReContentCell.m */,
+				FB32321622A695C500009A5C /* ESGameReContentCell.xib */,
+				FBB1A66422A7641B0044799A /* ESGameWebVC.h */,
+				FBB1A66522A7641B0044799A /* ESGameWebVC.m */,
+				FBB1A66622A7641B0044799A /* ESGameWebVC.xib */,
+				FBB1A66E22A76CBE0044799A /* ESGameWinVC.h */,
+				FBB1A66F22A76CBE0044799A /* ESGameWinVC.m */,
+				FBB1A67022A76CBE0044799A /* ESGameWinVC.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -572,19 +564,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB1A66822A7641B0044799A /* SPWebViewController.xib in Resources */,
+				FBB1A66822A7641B0044799A /* ESGameWebVC.xib in Resources */,
 				FB551E5F22A3DE6A00053B5C /* 3.mp3 in Resources */,
 				FB551E5C22A3DE6A00053B5C /* 5.mp3 in Resources */,
 				FB551E5B22A3DE6A00053B5C /* 4.mp3 in Resources */,
 				FB5172C5229E99B200252968 /* LaunchScreen.storyboard in Resources */,
 				FB551E5622A3DE6A00053B5C /* gamecenter.mp3 in Resources */,
 				FB551E5822A3DE6A00053B5C /* soso.mp3 in Resources */,
-				FBB1A67722A774710044799A /* SPLaunchVC.xib in Resources */,
-				FB32321322A694F400009A5C /* SPRecommendController.xib in Resources */,
+				FBB1A67722A774710044799A /* ESGameLaunchVC.xib in Resources */,
+				FB32321322A694F400009A5C /* ESGameRecommendVC.xib in Resources */,
 				FB551E6322A3DE6A00053B5C /* sound_1.mp3 in Resources */,
-				FB32321822A695C500009A5C /* SPRecommendCell.xib in Resources */,
+				FB32321822A695C500009A5C /* ESGameReContentCell.xib in Resources */,
 				FB551E5E22A3DE6A00053B5C /* 2.mp3 in Resources */,
-				FBAC193422A52290007C7883 /* SPChoosePhotoVC.xib in Resources */,
+				FBAC193422A52290007C7883 /* ESGameChoosePhotoVC.xib in Resources */,
 				FB551E5922A3DE6A00053B5C /* circle.mp3 in Resources */,
 				FB551E6022A3DE6A00053B5C /* movepiece.mp3 in Resources */,
 				FB551E5722A3DE6A00053B5C /* win.mp3 in Resources */,
@@ -593,16 +585,15 @@
 				FBB1A67A22A793C50044799A /* PrivacyPolicy.html in Resources */,
 				FB551E6122A3DE6A00053B5C /* sound_2.mp3 in Resources */,
 				FB551E5422A3DE6A00053B5C /* bye.mp3 in Resources */,
-				FB551E9822A3E64200053B5C /* WinBgView.xib in Resources */,
 				FB551E6522A3DE6A00053B5C /* LevelAudioPlist.plist in Resources */,
 				FB551E6622A3DE6A00053B5C /* sticker.plist in Resources */,
-				FBAC193922A53F7C007C7883 /* FLPaintingItemCell.xib in Resources */,
+				FBAC193922A53F7C007C7883 /* ESGameRecommendCell.xib in Resources */,
 				FB551E6222A3DE6A00053B5C /* sound_3.mp3 in Resources */,
 				FB5172C2229E99B200252968 /* Assets.xcassets in Resources */,
 				FB551E6422A3DE6A00053B5C /* sound_0.mp3 in Resources */,
 				FB5172BD229E99B000252968 /* Main.storyboard in Resources */,
 				FB551E5A22A3DE6A00053B5C /* 6.mp3 in Resources */,
-				FBB1A67222A76CBE0044799A /* SPWinViewController.xib in Resources */,
+				FBB1A67222A76CBE0044799A /* ESGameWinVC.xib in Resources */,
 				FBB1A67B22A793C50044799A /* UserAgreement.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,32 +672,31 @@
 			files = (
 				FB5172BA229E99B000252968 /* ViewController.m in Sources */,
 				FB551E6822A3DE6A00053B5C /* UIImage+Extension.m in Sources */,
-				FB551E9922A3E64200053B5C /* WinBgView.m in Sources */,
-				FB551E8522A3DE6A00053B5C /* PuzzleStatus.m in Sources */,
-				FB551E8722A3DE6A00053B5C /* JXPathSearcher.m in Sources */,
-				FB551E6E22A3DE6A00053B5C /* CommonTool.m in Sources */,
+				FB551E8522A3DE6A00053B5C /* ESPuzzleGameStatus.m in Sources */,
+				FB551E8722A3DE6A00053B5C /* ESGamePathSearch.m in Sources */,
+				FB551E6E22A3DE6A00053B5C /* ESGameCommonTool.m in Sources */,
 				FB5172B7229E99B000252968 /* AppDelegate.m in Sources */,
-				FB32321222A694F400009A5C /* SPRecommendController.m in Sources */,
-				FBB1A66722A7641B0044799A /* SPWebViewController.m in Sources */,
-				FB551E9422A3E61F00053B5C /* TYFWaveButton.m in Sources */,
-				FB551E8822A3DE6A00053B5C /* JXAStarSearcher.m in Sources */,
-				FB551E9122A3E5B600053B5C /* SPGameVC.m in Sources */,
-				FB32320E22A694CB00009A5C /* MYWaterFlowLayout.m in Sources */,
-				FBB1A67622A774710044799A /* SPLaunchVC.m in Sources */,
+				FB32321222A694F400009A5C /* ESGameRecommendVC.m in Sources */,
+				FBB1A66722A7641B0044799A /* ESGameWebVC.m in Sources */,
+				FB551E9422A3E61F00053B5C /* ESGameWaveButton.m in Sources */,
+				FB551E8822A3DE6A00053B5C /* ESStarGameSearcher.m in Sources */,
+				FB551E9122A3E5B600053B5C /* ESGameHomeVC.m in Sources */,
+				FB32320E22A694CB00009A5C /* ESGameFlowLayout.m in Sources */,
+				FBB1A67622A774710044799A /* ESGameLaunchVC.m in Sources */,
 				FB551E6C22A3DE6A00053B5C /* NSString+Extension.m in Sources */,
-				FBB1A67122A76CBE0044799A /* SPWinViewController.m in Sources */,
-				FB551E8922A3DE6A00053B5C /* JXBreadthFirstSearcher.m in Sources */,
-				FB32321722A695C500009A5C /* SPRecommendCell.m in Sources */,
+				FBB1A67122A76CBE0044799A /* ESGameWinVC.m in Sources */,
+				FB551E8922A3DE6A00053B5C /* ESBreadthGameSearcher.m in Sources */,
+				FB32321722A695C500009A5C /* ESGameReContentCell.m in Sources */,
 				FB551E8A22A3DE6A00053B5C /* AFNet.m in Sources */,
-				FBAF630322A3F81D00BFD8A0 /* SetController.m in Sources */,
-				FB551E6F22A3DE6A00053B5C /* JXPriorityQueue.m in Sources */,
+				FBAF630322A3F81D00BFD8A0 /* ESGameSetVC.m in Sources */,
+				FB551E6F22A3DE6A00053B5C /* ESPriorityGameQueue.m in Sources */,
 				FB551E6D22A3DE6A00053B5C /* UIView+Extension.m in Sources */,
-				FB551E7022A3DE6A00053B5C /* PuzzlePiece.m in Sources */,
+				FB551E7022A3DE6A00053B5C /* ESPuzzleGamePiece.m in Sources */,
 				FB5172C8229E99B200252968 /* main.m in Sources */,
 				FB5172C0229E99B000252968 /* Simplicity.xcdatamodeld in Sources */,
-				FBAC193822A53F7C007C7883 /* FLPaintingItemCell.m in Sources */,
-				FBAC193322A52290007C7883 /* SPChoosePhotoVC.m in Sources */,
-				FB551E8622A3DE6A00053B5C /* JXDoubleBreadthFirstSearcher.m in Sources */,
+				FBAC193822A53F7C007C7883 /* ESGameRecommendCell.m in Sources */,
+				FBAC193322A52290007C7883 /* ESGameChoosePhotoVC.m in Sources */,
+				FB551E8622A3DE6A00053B5C /* ESDoubleGameSearcher.m in Sources */,
 				FB551E6B22A3DE6A00053B5C /* UIColor+Extension.m in Sources */,
 				FB551E6922A3DE6A00053B5C /* NSObject+Model.m in Sources */,
 				FB551E6A22A3DE6A00053B5C /* NSDate+Extension.m in Sources */,
@@ -881,6 +871,7 @@
 			baseConfigurationReference = 5AE2D3048E2166E9212962D3 /* Pods-Simplicity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -905,6 +896,7 @@
 			baseConfigurationReference = D97191A99607BE977B07F008 /* Pods-Simplicity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

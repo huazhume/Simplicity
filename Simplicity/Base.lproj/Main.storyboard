@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="-207" y="-63"/>
         </scene>
-        <!--GameVC-->
+        <!--Game HomeVC-->
         <scene sceneID="eDp-af-Wlv">
             <objects>
-                <viewController storyboardIdentifier="SPGameVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ne9-DN-ucM" customClass="SPGameVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ESGameHomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ne9-DN-ucM" customClass="ESGameHomeVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8i7-3s-YR4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,7 +135,7 @@
                                                     <constraint firstAttribute="width" secondItem="sZt-qm-bhU" secondAttribute="height" multiplier="1:1" id="KpB-l3-8li"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-kB-WxE" customClass="TYFWaveButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-kB-WxE" customClass="ESGameWaveButton">
                                                 <rect key="frame" x="19" y="607" width="105.5" height="40"/>
                                                 <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="0.7987746147" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -148,7 +148,7 @@
                                                     <action selector="onAutoButton:" destination="Ne9-DN-ucM" eventType="touchUpInside" id="lbm-yf-UMk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwu-Uq-sOj" customClass="TYFWaveButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwu-Uq-sOj" customClass="ESGameWaveButton">
                                                 <rect key="frame" x="250.5" y="607" width="106" height="40"/>
                                                 <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="0.7987746147" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="reset">
@@ -158,7 +158,7 @@
                                                     <action selector="onResetButton:" destination="Ne9-DN-ucM" eventType="touchUpInside" id="9RL-2P-1n0"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxj-Ba-FP4" customClass="TYFWaveButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxj-Ba-FP4" customClass="ESGameWaveButton">
                                                 <rect key="frame" x="134.5" y="607" width="106" height="40"/>
                                                 <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="0.7987746147" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -201,14 +201,12 @@
                                             <constraint firstAttribute="trailing" secondItem="dRP-3q-pcq" secondAttribute="trailing" constant="10" id="3ia-E9-dNt"/>
                                             <constraint firstItem="sZt-qm-bhU" firstAttribute="top" secondItem="3eW-Z7-vOi" secondAttribute="bottom" constant="40" id="89O-qL-fUi"/>
                                             <constraint firstItem="sZt-qm-bhU" firstAttribute="width" secondItem="Ygd-RX-wqJ" secondAttribute="width" multiplier="0.9" id="8DZ-UM-2QJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="mQ9-kB-WxE" secondAttribute="bottom" id="8U2-Dz-qbc"/>
                                             <constraint firstItem="dRP-3q-pcq" firstAttribute="top" secondItem="Ygd-RX-wqJ" secondAttribute="top" constant="735" id="9Om-lI-aBI"/>
                                             <constraint firstItem="Lxj-Ba-FP4" firstAttribute="centerX" secondItem="Ygd-RX-wqJ" secondAttribute="centerX" id="Aen-PK-CpD"/>
                                             <constraint firstItem="sZt-qm-bhU" firstAttribute="centerX" secondItem="Ygd-RX-wqJ" secondAttribute="centerX" id="BXa-hS-inE"/>
                                             <constraint firstItem="cwu-Uq-sOj" firstAttribute="leading" secondItem="Lxj-Ba-FP4" secondAttribute="trailing" constant="10" id="CA0-ll-4no"/>
                                             <constraint firstItem="Lxj-Ba-FP4" firstAttribute="centerY" secondItem="cwu-Uq-sOj" secondAttribute="centerY" id="EDo-FS-Zqr"/>
                                             <constraint firstItem="Lxj-Ba-FP4" firstAttribute="width" secondItem="mQ9-kB-WxE" secondAttribute="width" id="FTf-6O-dc4"/>
-                                            <constraint firstItem="mQ9-kB-WxE" firstAttribute="top" secondItem="Lyq-KL-c5B" secondAttribute="bottom" constant="50" id="Hn5-z4-oHv"/>
                                             <constraint firstAttribute="height" constant="647" id="UQa-ub-4Up"/>
                                             <constraint firstItem="Lxj-Ba-FP4" firstAttribute="leading" secondItem="mQ9-kB-WxE" secondAttribute="trailing" constant="10" id="VaR-iU-PXi"/>
                                             <constraint firstItem="cwu-Uq-sOj" firstAttribute="width" secondItem="mQ9-kB-WxE" secondAttribute="width" id="cig-t2-vid"/>
@@ -218,6 +216,7 @@
                                             <constraint firstItem="3eW-Z7-vOi" firstAttribute="top" secondItem="Ygd-RX-wqJ" secondAttribute="top" constant="40" id="khd-wr-h19"/>
                                             <constraint firstItem="cwu-Uq-sOj" firstAttribute="height" secondItem="mQ9-kB-WxE" secondAttribute="height" id="mUF-zw-yB3"/>
                                             <constraint firstItem="3eW-Z7-vOi" firstAttribute="centerX" secondItem="Ygd-RX-wqJ" secondAttribute="centerX" id="mdN-ft-4Os"/>
+                                            <constraint firstItem="Lxj-Ba-FP4" firstAttribute="top" secondItem="Lyq-KL-c5B" secondAttribute="bottom" constant="50" id="prC-0e-uiy"/>
                                             <constraint firstItem="cwu-Uq-sOj" firstAttribute="top" secondItem="mQ9-kB-WxE" secondAttribute="top" id="s19-t0-45e"/>
                                             <constraint firstItem="cwu-Uq-sOj" firstAttribute="trailing" secondItem="sZt-qm-bhU" secondAttribute="trailing" id="vP4-CP-Vek"/>
                                         </constraints>
@@ -237,6 +236,7 @@
                             <constraint firstItem="Iwu-r1-yIL" firstAttribute="top" secondItem="EdM-h9-znR" secondAttribute="top" id="GLi-F5-6hc"/>
                             <constraint firstItem="Iwu-r1-yIL" firstAttribute="leading" secondItem="EdM-h9-znR" secondAttribute="leading" id="NBp-75-wHE"/>
                             <constraint firstItem="EdM-h9-znR" firstAttribute="bottom" secondItem="Iwu-r1-yIL" secondAttribute="bottom" id="TYA-Bq-D3f"/>
+                            <constraint firstItem="EdM-h9-znR" firstAttribute="bottom" secondItem="mQ9-kB-WxE" secondAttribute="bottom" id="Znv-o5-aH4"/>
                             <constraint firstItem="EdM-h9-znR" firstAttribute="trailing" secondItem="Iwu-r1-yIL" secondAttribute="trailing" id="zap-D7-ULJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EdM-h9-znR"/>

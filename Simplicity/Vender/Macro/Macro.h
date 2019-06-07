@@ -1,8 +1,8 @@
 //
 //  Macro.h
-//  Puzzle
+//  EnjoyGame
 //
-//  Created by duodian on 2018/6/1.
+//  Created by enjoy on 2018/6/1.
 //  Copyright © 2018年 丁远帅. All rights reserved.
 //
 
@@ -30,5 +30,8 @@
 #define IsVIP @"kIsVIP"
 #define IsStopHello @"kIsStopHello"
 #define IsStopAnimate @"kIsStopAnimate"
+
+
+#define isAudio [[NSUserDefaults standardUserDefaults] boolForKey:IsStopHello]
 
 #endif /* Macro_h */

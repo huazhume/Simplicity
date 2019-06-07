@@ -1,8 +1,8 @@
 //
 //  UIImage+Extension.m
-//  Puzzle
+//  EnjoyGame
 //
-//  Created by duodian on 2018/5/31.
+//  Created by enjoy on 2018/5/31.
 //  Copyright © 2018年 丁远帅. All rights reserved.
 //
 

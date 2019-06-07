@@ -1,8 +1,8 @@
 //
 //  PrefixHeader.pch
-//  Puzzle
+//  EnjoyGame
 //
-//  Created by duodian on 2018/6/1.
+//  Created by enjoy on 2018/6/1.
 //  Copyright © 2018年 丁远帅. All rights reserved.
 //
 
@@ -19,6 +19,8 @@
 #define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
 //屏幕高度
 #define SCREEN_HEIGHT  [[UIScreen mainScreen] bounds].size.height
+
+#define appIdString @"131231283617"
 
 
 #endif /* PrefixHeader_pch */

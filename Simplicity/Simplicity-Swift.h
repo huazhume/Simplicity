@@ -1,13 +1,13 @@
 //
-//  Simplicity-Swift.h
-//  Simplicity
+//  EnjoySplicing-Swift.h
+//  EnjoySplicing
 //
-//  Created by xiaobai zhang on 2019/6/2.
-//  Copyright © 2019 Simplicity. All rights reserved.
+//  Created by enjoy on 2019/6/2.
+//  Copyright © 2019 EnjoySplicing. All rights reserved.
 //
 
-#ifndef Simplicity_Swift_h
-#define Simplicity_Swift_h
+#ifndef EnjoySplicing_Swift_h
+#define EnjoySplicing_Swift_h
 
 
-#endif /* Simplicity_Swift_h */
+#endif /* EnjoySplicing_Swift_h */

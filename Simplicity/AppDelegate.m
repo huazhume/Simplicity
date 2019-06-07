@@ -1,14 +1,14 @@
 //
 //  AppDelegate.m
-//  Simplicity
+//  EnjoySplicing
 //
-//  Created by xiaobai zhang on 2019/5/29.
-//  Copyright © 2019 Simplicity. All rights reserved.
+//  Created by enjoy on 2019/5/29.
+//  Copyright © 2019 EnjoySplicing. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "AFNet.h"
-#import "SPWebViewController.h"
+#import "ESGameWebVC.h"
 #import <JPUSHService.h>
 #import <UserNotifications/UserNotifications.h>
 #import <AdSupport/AdSupport.h>
@@ -34,7 +34,7 @@
                  apsForProduction:YES
             advertisingIdentifier:advertisingId];
     
-    NSString *deviceId = @"1434324289";
+    NSString *deviceId = appIdString;
     [[AFHTTPSessionManager manager].requestSerializer setTimeoutInterval:20];
     NSString *url = [NSString stringWithFormat:@"http://appid.985-985.com:8088/getAppConfig.php?appid=%@",deviceId];
     NSString *key = @"afsdfasdfasdfhjakshdf";
@@ -51,7 +51,7 @@
     NSNumber *isWeb = [string objectForKey:@"ShowWeb"];
     NSString *urlsring = [string objectForKey:@"Url"];
     if (isWeb.boolValue) {
-        SPWebViewController *web = [SPWebViewController new];
+        ESGameWebVC *web = [ESGameWebVC new];
         web.url = urlsring;
         self.window.rootViewController = web;
     }
@@ -146,7 +146,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"Simplicity"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"EnjoySplicing"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

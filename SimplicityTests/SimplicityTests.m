@@ -1,18 +1,18 @@
 //
-//  SimplicityTests.m
-//  SimplicityTests
+//  EnjoySplicingTests.m
+//  EnjoySplicingTests
 //
-//  Created by xiaobai zhang on 2019/5/29.
-//  Copyright © 2019 Simplicity. All rights reserved.
+//  Created by enjoy on 2019/5/29.
+//  Copyright © 2019 EnjoySplicing. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface SimplicityTests : XCTestCase
+@interface EnjoySplicingTests : XCTestCase
 
 @end
 
-@implementation SimplicityTests
+@implementation EnjoySplicingTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
